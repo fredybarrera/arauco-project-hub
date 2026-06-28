@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 2 - Architecture (En progreso)
 
-**Estado general:** Filosofía del Producto y SRS-001 a SRS-010 aprobados. Arquitecturas principales, Diseño de la API y Arquitectura de Seguridad aprobados. Preparación del diseño de Autenticación.
+**Estado general:** Filosofía del Producto y SRS-001 a SRS-010 aprobados. Arquitecturas principales, Seguridad y Autenticación aprobadas. Preparación de la decisión sobre identidad y sesión.
 
 ---
 
@@ -58,6 +58,7 @@
 * ✅ Arquitectura del Frontend
 * ✅ Diseño de la API
 * ✅ Arquitectura de Seguridad
+* ✅ Autenticación
 
 ---
 
@@ -69,21 +70,21 @@ Pendientes.
 
 # Documento Actual
 
-Arquitectura de Seguridad (Approved)
+Autenticación (Approved)
 
 Objetivo:
 
-Definir cómo Frontend, API y Backend colaboran para autenticar identidades, autorizar capacidades, proteger información y conservar trazabilidad.
+Definir el contrato y flujo de autenticación entre Frontend y API, manteniendo separados identidad, sesión, autorización y reglas del dominio.
 
 ---
 
 # Siguiente Objetivo
 
-Autenticación
+ADR-005 - Proveedor de Identidad y Estrategia de Sesión
 
 Objetivo:
 
-Definir el contrato y flujo de autenticación entre el Frontend y la API, manteniendo separados identidad, sesión, autorización y reglas del dominio.
+Evaluar y seleccionar el proveedor corporativo, protocolo, flujo y estrategia de sesión que permitan autenticar identidades de forma segura con Nuxt 4 y ASP.NET Core 10.
 
 ---
 
@@ -111,15 +112,15 @@ Diccionario de Datos aprobado.
 
 # Próximos Hitos
 
-* Autenticación
-* ADR de proveedor de identidad y sesión
+* ADR-005 - Proveedor de Identidad y Estrategia de Sesión
 * Persistencia
+* Observabilidad
 
 ---
 
 # Última Decisión Importante
 
-La Arquitectura de Seguridad separa autenticación, autorización, reglas del dominio, Historial y observabilidad, y exige autorización contextual en el Backend.
+Autenticación define el flujo general entre Frontend, proveedor de identidad, API y Backend, y prohíbe utilizar datos libres del consumidor como identidad responsable.
 
 ---
 

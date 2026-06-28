@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### Autenticación
+
+**Documento aprobado:** Autenticación
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se definió el contrato general de autenticación entre Frontend y API.
+* Se separaron identidad, sesión, autorización y reglas del dominio.
+* Se establecieron responsabilidades para proveedor, Frontend, API y Backend.
+* Se documentaron inicio, continuidad, expiración y cierre.
+* Se prohibió utilizar identificadores libres del consumidor como identidad responsable.
+* Se definieron criterios para errores, protección, observabilidad y pruebas.
+* Se mantuvieron proveedor, protocolo y estrategia de sesión como decisiones Pendientes.
+* Se definió ADR-005 - Proveedor de Identidad y Estrategia de Sesión como el siguiente documento del Engineering Playbook.
+
+---
+
 ### Arquitectura de Seguridad
 
 **Documento aprobado:** Arquitectura de Seguridad
