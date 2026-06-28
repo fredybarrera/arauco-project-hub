@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 2 - Architecture (En progreso)
 
-**Estado general:** Filosofía del Producto, Modelo de Dominio, Modelo Operacional y arquitectura basada en el Negocio aprobados. Preparación del Modelo Relacional.
+**Estado general:** Filosofía del Producto, Modelo de Dominio, Modelo Operacional, arquitectura basada en el Negocio y Modelo Relacional aprobados. Preparación del DER.
 
 ---
 
@@ -18,6 +18,7 @@
 * ✅ SRS-002 - Lenguaje Ubicuo
 * ✅ SRS-003 - Modelo de Dominio
 * ✅ SRS-004 - Modelo Operacional
+* ✅ SRS-010 - Modelo Relacional
 
 ---
 
@@ -41,23 +42,21 @@ Pendientes.
 
 # Documento Actual
 
-ADR-001 - Arquitectura Basada en el Negocio (Approved)
+SRS-010 - Modelo Relacional (Approved)
 
 Objetivo:
 
-Formalizar cómo las decisiones arquitectónicas deben derivarse del dominio aprobado.
-
-Este documento establece que la arquitectura y las tecnologías deben proteger la Filosofía del Producto, el Lenguaje Ubicuo, el Modelo de Dominio y el Modelo Operacional.
+Representar el Modelo de Dominio aprobado mediante estructuras relacionales, preservando sus relaciones, reglas y trazabilidad sin convertir la persistencia en la fuente de definición del dominio.
 
 ---
 
 # Siguiente Objetivo
 
-Modelo Relacional
+DER
 
 Objetivo:
 
-Representar el Modelo de Dominio aprobado mediante estructuras relacionales, preservando sus relaciones, reglas y trazabilidad sin convertir la persistencia en la fuente de definición del dominio.
+Representar visualmente las estructuras y relaciones aprobadas en SRS-010, manteniendo trazabilidad hacia el Modelo de Dominio y sin incorporar nuevos conceptos.
 
 ---
 
@@ -75,11 +74,14 @@ Modelo de Dominio aprobado.
 
 Modelo Operacional aprobado.
 
+Modelo Relacional aprobado.
+
 ---
 
 # Próximos Hitos
 
-* Modelo Relacional
+* DER
+* Diccionario de Datos
 * Arquitectura
 * Backend
 * Frontend
@@ -88,7 +90,7 @@ Modelo Operacional aprobado.
 
 # Última Decisión Importante
 
-La arquitectura de Arauco Project Hub se deriva del dominio aprobado y mantiene separadas sus reglas de los detalles tecnológicos.
+El Modelo Relacional deriva del Modelo de Dominio aprobado, conserva a la Iniciativa como Aggregate Root principal y no reemplaza las reglas del dominio.
 
 ---
 

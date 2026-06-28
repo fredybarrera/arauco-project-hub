@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### SRS-010 - Modelo Relacional
+
+**Documento aprobado:** SRS-010 - Modelo Relacional
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se representó el Modelo de Dominio aprobado mediante estructuras relacionales.
+* Se mantuvo a la Iniciativa como Aggregate Root principal del modelo.
+* Se definieron las relaciones entre Negocio, Iniciativa, Participantes, Componentes, Recursos, Documentos, Conversaciones, Solicitudes, Versiones, Ambientes, Despliegues e Historial.
+* Se establecieron reglas de integridad para proteger las relaciones y la trazabilidad aprobadas.
+* Se mantuvieron los Objetos de Valor gobernados por el dominio fuera de la configuración libre.
+* Se documentó la correspondencia entre las estructuras relacionales y sus fuentes aprobadas.
+* Se postergaron la selección tecnológica y la estrategia de persistencia para una decisión arquitectónica específica.
+* Se definió el DER como el siguiente documento del Engineering Playbook.
+
+---
+
 ### ADR-001 - Arquitectura Basada en el Negocio
 
 **Documento aprobado:** ADR-001 - Arquitectura Basada en el Negocio
