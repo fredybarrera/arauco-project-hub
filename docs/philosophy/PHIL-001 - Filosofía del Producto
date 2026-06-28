@@ -1,0 +1,427 @@
+# Arauco Project Hub
+
+## Engineering Playbook
+
+# PHIL-001 - Filosofía del Producto
+
+**Versión:** 1.0
+
+**Estado:** Approved
+
+**Fecha:** 2026-06-28
+
+---
+
+# 1. Objetivo
+
+Este documento define la Filosofía del Producto de Arauco Project Hub.
+
+Su propósito es establecer los principios que orientan las decisiones funcionales, de dominio, arquitectónicas y técnicas durante toda la vida del producto.
+
+La Filosofía del Producto permite evaluar no solo si una decisión es posible, sino también si es coherente con el problema que Arauco Project Hub debe resolver.
+
+---
+
+# 2. Alcance
+
+Este documento establece:
+
+* La identidad de Arauco Project Hub.
+* Los principios permanentes del producto.
+* Los límites que protegen su propósito.
+* El orden para resolver decisiones y tensiones.
+* Los criterios que deben orientar su evolución.
+* Las implicancias de estos principios para el Engineering Playbook.
+
+Este documento no define:
+
+* Nuevos conceptos del dominio.
+* Requerimientos funcionales detallados.
+* Arquitectura.
+* Tecnologías.
+* Modelo de datos.
+* API.
+* Pantallas.
+* Permisos específicos.
+* Procedimientos operacionales.
+
+Estos elementos deberán derivarse posteriormente de la Filosofía del Producto y de los SRS aprobados.
+
+---
+
+# 3. Identidad del Producto
+
+Arauco Project Hub es la plataforma corporativa que acompaña el ciclo de vida completo de las Iniciativas tecnológicas dentro de Arauco.
+
+Su razón de existir es mantener en un mismo contexto la necesidad del Negocio, sus Participantes, decisiones, Recursos, Documentos, Conversaciones, Componentes, Solicitudes, Versiones, Despliegues e Historial.
+
+Arauco Project Hub conecta el origen de una Iniciativa con la Operación y evolución de la Solución.
+
+La plataforma debe permitir que cada actor comprenda:
+
+* Qué necesidad se está atendiendo.
+* Qué valor se espera generar.
+* En qué estado se encuentra la Iniciativa.
+* Quiénes participan.
+* Qué decisiones se han tomado.
+* Qué elementos están pendientes.
+* Cómo ha evolucionado la Iniciativa.
+
+---
+
+# 4. Convicción central
+
+El problema principal que resuelve Arauco Project Hub no es la falta de herramientas.
+
+El problema es la fragmentación del contexto de una Iniciativa durante su ciclo de vida.
+
+Por esta razón, el valor del producto no se mide por la cantidad de funcionalidades incorporadas, sino por su capacidad para conservar continuidad, trazabilidad y comprensión compartida desde la Idea hasta la Operación.
+
+---
+
+# 5. Principios del Producto
+
+## FP-001 - El Negocio define el producto
+
+Las necesidades del Negocio y su forma real de operar deben orientar el producto.
+
+La tecnología no debe imponer conceptos, flujos ni estructuras que contradigan el dominio.
+
+Toda capacidad debe responder a una necesidad comprendida y trazable.
+
+---
+
+## FP-002 - La Iniciativa es el centro
+
+La Iniciativa es la unidad principal alrededor de la cual se organiza toda la información.
+
+Las capacidades futuras deben mantener la continuidad del contexto de la Iniciativa y respetar las relaciones definidas en el Modelo de Dominio.
+
+Las Solicitudes no reemplazan a la Iniciativa ni existen de manera aislada.
+
+---
+
+## FP-003 - El ciclo de vida es continuo
+
+Una Iniciativa no termina cuando la Solución llega a Producción.
+
+La Iniciativa madura hacia Operación y conserva el contexto necesario para atender Errores, Mejoras y Nuevos Desarrollos mediante Solicitudes.
+
+La evolución de la Solución debe permanecer conectada con su origen.
+
+---
+
+## FP-004 - Una única fuente de verdad
+
+La información relevante de una Iniciativa debe mantenerse dentro de Arauco Project Hub.
+
+Las reuniones, correos electrónicos y otras herramientas pueden facilitar la coordinación, pero no deben convertirse en la única ubicación de una decisión, aprobación, rechazo o evidencia.
+
+La plataforma debe reducir la necesidad de reconstruir el contexto desde fuentes dispersas.
+
+---
+
+## FP-005 - La documentación forma parte del producto
+
+La documentación no es una actividad posterior ni separada de la construcción del producto.
+
+Los SRS, ADR, Decisions, Standards y demás documentos del Engineering Playbook constituyen su memoria oficial.
+
+Una decisión relevante no está completa hasta que queda documentada en el lugar correspondiente.
+
+---
+
+## FP-006 - La trazabilidad debe ser inherente
+
+Las acciones y decisiones relevantes deben conservarse en el Historial y en las Conversaciones correspondientes.
+
+La trazabilidad no debe depender únicamente de la memoria de los Participantes ni de registros manuales aislados.
+
+El producto debe permitir comprender qué ocurrió, cuándo ocurrió, quién participó y por qué se tomó una decisión.
+
+---
+
+## FP-007 - La transparencia es el estado esperado
+
+Los Participantes deben poder conocer el estado real de una Iniciativa y sus dependencias.
+
+La información no debe quedar limitada por la estructura de canales informales ni por listas paralelas.
+
+La definición futura de permisos deberá proteger la información sin destruir la visibilidad necesaria para colaborar.
+
+---
+
+## FP-008 - La colaboración debe conservar contexto
+
+Las Conversaciones deben mantenerse asociadas a la Iniciativa o Solicitud que les da sentido.
+
+Colaborar no consiste solo en intercambiar mensajes. Consiste en conservar decisiones, observaciones, aprobaciones, rechazos y evidencias dentro de un contexto compartido.
+
+---
+
+## FP-009 - La simplicidad tiene prioridad
+
+La plataforma debe ser sencilla de comprender y utilizar.
+
+Se debe preferir un flujo común, explícito y controlado antes que múltiples configuraciones para representar variantes no confirmadas del negocio.
+
+Toda complejidad incorporada debe justificar el valor que aporta.
+
+Si dos alternativas resuelven adecuadamente la misma necesidad, debe preferirse la que introduzca menos conceptos, reglas y dependencias.
+
+---
+
+## FP-010 - La estandarización protege la coherencia
+
+Arauco Project Hub debe promover una manera común de administrar Iniciativas entre los Negocios.
+
+Las diferencias reales entre Negocios deben poder representarse sin fragmentar el producto ni crear modelos independientes para cada uno.
+
+Los estados, tipos y relaciones principales deben permanecer gobernados por el dominio.
+
+---
+
+## FP-011 - La tecnología sirve al dominio
+
+Las decisiones tecnológicas deben derivarse del dominio, de los requerimientos aprobados y de las restricciones reales.
+
+No se debe modificar el dominio para acomodarlo a una herramienta, biblioteca, servicio o preferencia técnica.
+
+Una tecnología es adecuada cuando permite expresar el modelo con claridad, mantenerlo con simplicidad y evolucionarlo sin perder trazabilidad.
+
+---
+
+## FP-012 - La evolución debe ser intencional
+
+El producto debe evolucionar a partir de necesidades validadas.
+
+No se deben crear conceptos, capacidades ni configuraciones para anticipar escenarios hipotéticos sin evidencia suficiente.
+
+Toda incorporación debe preservar compatibilidad conceptual con el Lenguaje Ubicuo y el Modelo de Dominio.
+
+---
+
+## FP-013 - La responsabilidad permanece visible
+
+La colaboración entre múltiples actores no debe diluir la responsabilidad.
+
+Cada aprobación, rechazo, coordinación o cambio relevante debe permitir identificar a los Participantes involucrados.
+
+La automatización futura puede facilitar el trabajo, pero no debe ocultar las decisiones del Negocio ni sus responsables.
+
+---
+
+## FP-014 - La adopción debe reducir carga
+
+Arauco Project Hub debe simplificar el trabajo cotidiano de los actores.
+
+Registrar y consultar información debe requerir un esfuerzo proporcional al valor de la trazabilidad obtenida.
+
+La plataforma no debe trasladar la dispersión actual hacia una acumulación innecesaria de formularios, estados o pasos.
+
+---
+
+# 6. Lo que Arauco Project Hub es
+
+Arauco Project Hub es:
+
+* Una plataforma corporativa para administrar Iniciativas tecnológicas.
+* Una fuente de verdad compartida.
+* Una memoria trazable del ciclo de vida.
+* Un espacio de colaboración contextual.
+* Un vínculo entre Negocio, Desarrollo, Producción y Operación.
+* Un medio para promover estándares comunes entre los Negocios.
+
+---
+
+# 7. Lo que Arauco Project Hub no es
+
+Arauco Project Hub no es:
+
+* Un gestor de tareas genérico.
+* Un reemplazo del criterio de los actores responsables.
+* Una colección de formularios desconectados.
+* Una herramienta centrada exclusivamente en Solicitudes.
+* Un repositorio documental sin contexto operacional.
+* Una representación de la estructura de una tecnología específica.
+* Una plataforma distinta para cada Negocio.
+
+Estas exclusiones protegen el propósito del producto y evitan que su evolución se desvíe hacia capacidades que no fortalecen el ciclo de vida de la Iniciativa.
+
+---
+
+# 8. Orden de decisión
+
+Cuando existan alternativas o tensiones, se deberá respetar el siguiente orden:
+
+1. Filosofía del Producto.
+2. SRS aprobados.
+3. ADR aprobados.
+4. Decisions vigentes.
+5. Standards vigentes.
+6. Código.
+
+Una decisión de nivel inferior no puede contradecir una definición aprobada de nivel superior.
+
+Si una necesidad no puede resolverse sin contradecir un documento aprobado, se debe detener la implementación y proponer una nueva revisión del documento correspondiente.
+
+---
+
+# 9. Criterios para evaluar decisiones
+
+Antes de aprobar una capacidad o decisión, se debe responder:
+
+1. ¿Qué necesidad real del Negocio resuelve?
+2. ¿Mantiene a la Iniciativa como centro?
+3. ¿Utiliza exclusivamente el Lenguaje Ubicuo?
+4. ¿Es coherente con el Modelo de Dominio y el Modelo Operacional?
+5. ¿Mejora la trazabilidad o la comprensión compartida?
+6. ¿Reduce la dispersión de información?
+7. ¿Es la alternativa más simple que resuelve adecuadamente la necesidad?
+8. ¿Introduce un concepto nuevo?
+9. ¿Duplica información que ya tiene una fuente oficial?
+10. ¿Puede aplicarse a múltiples Negocios sin fragmentar el producto?
+11. ¿Requiere una decisión arquitectónica documentada mediante ADR?
+12. ¿Su valor justifica la complejidad que agrega?
+
+Una respuesta insuficiente debe conducir a revisar o postergar la decisión.
+
+---
+
+# 10. Tensiones del Producto
+
+## 10.1 Simplicidad y flexibilidad
+
+La flexibilidad es valiosa cuando representa diferencias reales y validadas del Negocio.
+
+Cuando la flexibilidad solo anticipa posibilidades futuras, debe prevalecer la simplicidad.
+
+---
+
+## 10.2 Estandarización y autonomía de los Negocios
+
+Los Negocios pueden tener necesidades distintas, pero deben compartir el mismo Lenguaje Ubicuo y el mismo núcleo de dominio.
+
+Las diferencias no deben resolverse creando modelos incompatibles o duplicando la plataforma.
+
+---
+
+## 10.3 Trazabilidad y esfuerzo de registro
+
+La trazabilidad es obligatoria para acciones y decisiones relevantes.
+
+El producto debe evitar solicitar información que ya existe, que puede derivarse del contexto o que no aporta valor operacional.
+
+---
+
+## 10.4 Transparencia y protección de la información
+
+La visibilidad permite colaboración y responsabilidad compartida.
+
+Los permisos futuros deben limitar solo aquello que requiera protección, manteniendo visible el contexto necesario para participar.
+
+---
+
+## 10.5 Evolución y estabilidad
+
+El producto debe poder evolucionar sin convertir sus conceptos principales en configuraciones libres.
+
+El Lenguaje Ubicuo, las relaciones fundamentales y las reglas aprobadas deben permanecer estables hasta que exista una razón de negocio documentada para revisarlas.
+
+---
+
+# 11. Implicancias para el Engineering Playbook
+
+## 11.1 Documentación antes de implementación
+
+Toda capacidad debe estar respaldada por documentación aprobada antes de implementarse.
+
+---
+
+## 11.2 Dominio antes de arquitectura
+
+Las decisiones arquitectónicas deben explicar cómo protegen y expresan el dominio.
+
+La relación entre el dominio y la arquitectura deberá formalizarse mediante ADR.
+
+---
+
+## 11.3 Revisión explícita de nuevos conceptos
+
+Todo concepto nuevo debe justificarse y proponerse primero en una nueva revisión del Lenguaje Ubicuo.
+
+---
+
+## 11.4 Trazabilidad entre documentos
+
+Los requerimientos, decisiones arquitectónicas, Standards y futuras implementaciones deben poder relacionarse con los principios y SRS que los originan.
+
+---
+
+## 11.5 Aprobación controlada
+
+Los documentos en estado Draft pueden evolucionar durante su revisión.
+
+Un documento Approved constituye una fuente oficial y no debe modificarse sin una nueva revisión.
+
+---
+
+# 12. Decisiones tomadas
+
+## D-001
+
+El valor principal de Arauco Project Hub es conservar el contexto completo de una Iniciativa durante su ciclo de vida.
+
+---
+
+## D-002
+
+La Filosofía del Producto tiene prioridad sobre los SRS, ADR, Decisions, Standards y código.
+
+---
+
+## D-003
+
+La simplicidad prevalece sobre la configurabilidad cuando no existe una diferencia validada del Negocio.
+
+---
+
+## D-004
+
+La tecnología debe adaptarse al dominio y no definirlo.
+
+---
+
+## D-005
+
+La documentación y la trazabilidad forman parte integral del producto.
+
+---
+
+## D-006
+
+Arauco Project Hub mantendrá un núcleo común para múltiples Negocios.
+
+---
+
+## D-007
+
+La adopción del producto debe reducir la dispersión y la carga operacional, no reemplazarlas por complejidad interna.
+
+---
+
+# 13. Pendientes
+
+* Validar los principios con Business Expert, Responsable Funcional, Jefe de Proyecto y Technical Lead.
+* Definir cómo se evaluará periódicamente la coherencia del producto con esta Filosofía.
+* Formalizar mediante ADR la relación entre el dominio y las decisiones arquitectónicas.
+* Definir los Standards que permitan aplicar estos principios durante la implementación.
+* Validar si se requiere un principio adicional para la protección de información corporativa.
+
+---
+
+# 14. Estado del Documento
+
+**Estado actual:** Approved
+
+Este documento constituye la fuente oficial de Filosofía del Producto de Arauco Project Hub.
