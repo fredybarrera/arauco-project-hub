@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### SRS-009 - Casos de Uso
+
+**Documento aprobado:** SRS-009 - Casos de Uso
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se definieron trece Casos de Uso verificables.
+* Se cubrieron registro, consulta y actualización de Iniciativas.
+* Se incorporaron Participantes, Componentes, Recursos, Documentos y Conversaciones.
+* Se documentaron cambios de estado, validación en QAS, Versiones y Despliegues.
+* Se cubrieron registro y evolución de Solicitudes y consulta del Historial.
+* Se incorporó una matriz de cobertura hacia Flujos de Negocio y Requerimientos Funcionales.
+* Se mantuvieron explícitamente Pendientes las interacciones cuya autoridad o transición aún no está aprobada.
+* Se definió Arquitectura de Seguridad como el siguiente documento del Engineering Playbook.
+
+---
+
 ### SRS-008 - Flujos de Negocio
 
 **Documento aprobado:** SRS-008 - Flujos de Negocio

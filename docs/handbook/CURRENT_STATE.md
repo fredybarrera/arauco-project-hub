@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 2 - Architecture (En progreso)
 
-**Estado general:** Filosofía del Producto, modelos, requerimientos, permisos y Flujos de Negocio aprobados. Arquitecturas principales y Diseño de la API aprobados. Preparación de los Casos de Uso.
+**Estado general:** Filosofía del Producto y SRS-001 a SRS-010 aprobados. Arquitecturas principales y Diseño de la API aprobados. Preparación de la Arquitectura de Seguridad.
 
 ---
 
@@ -22,6 +22,7 @@
 * ✅ SRS-006 - Requerimientos No Funcionales
 * ✅ SRS-007 - Modelo de Permisos
 * ✅ SRS-008 - Flujos de Negocio
+* ✅ SRS-009 - Casos de Uso
 * ✅ SRS-010 - Modelo Relacional
 
 ---
@@ -67,21 +68,21 @@ Pendientes.
 
 # Documento Actual
 
-SRS-008 - Flujos de Negocio (Approved)
+SRS-009 - Casos de Uso (Approved)
 
 Objetivo:
 
-Definir los recorridos funcionales de extremo a extremo mediante los cuales los actores gestionan una Iniciativa y sus Solicitudes, conservando estados, permisos y trazabilidad.
+Definir interacciones verificables entre los actores y Arauco Project Hub para ejecutar las capacidades y Flujos de Negocio aprobados.
 
 ---
 
 # Siguiente Objetivo
 
-SRS-009 - Casos de Uso
+Arquitectura de Seguridad
 
 Objetivo:
 
-Definir interacciones verificables entre los actores y Arauco Project Hub para ejecutar las capacidades y Flujos de Negocio aprobados.
+Definir cómo autenticación, autorización, protección de información y trazabilidad técnica colaboran entre Frontend, API y Backend sin reemplazar el Modelo de Permisos ni las reglas del dominio.
 
 ---
 
@@ -109,15 +110,15 @@ Diccionario de Datos aprobado.
 
 # Próximos Hitos
 
-* Casos de Uso
-* Catálogo de operaciones de la API
+* Arquitectura de Seguridad
+* Autenticación
 * Persistencia
 
 ---
 
 # Última Decisión Importante
 
-SRS-008 define nueve Flujos de Negocio de extremo a extremo, desde el registro de una Iniciativa hasta su Operación y evolución mediante Solicitudes.
+SRS-009 define trece Casos de Uso y su cobertura sobre los Flujos de Negocio y Requerimientos Funcionales aprobados.
 
 ---
 
