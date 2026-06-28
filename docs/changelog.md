@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### ADR-003 - Frontend con Nuxt 4
+
+**Documento aprobado:** ADR-003 - Frontend con Nuxt 4
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se evaluaron Vue 3 con Vite, Nuxt 4 y Next.js como bases tecnológicas del Frontend.
+* Se decidió implementar el Frontend con Nuxt 4, Vue 3 y TypeScript.
+* Se estableció que Nuxt es un detalle tecnológico y no define conceptos ni reglas del dominio.
+* Se exigió separar la presentación, la comunicación con la API y las reglas del dominio.
+* Se definieron contratos explícitos con la API mediante TypeScript.
+* Se documentaron riesgos de acoplamiento al framework, lógica concentrada en páginas y complejidad de renderizado.
+* Se postergaron el modo de renderizado y el despliegue hasta contar con requerimientos aprobados.
+* Se definió ADR-004 - Backend con .NET 10 como el siguiente documento del Engineering Playbook.
+
+---
+
 ### ADR-002 - Monorepo
 
 **Documento aprobado:** ADR-002 - Monorepo

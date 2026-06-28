@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 2 - Architecture (En progreso)
 
-**Estado general:** Filosofía del Producto, Modelo de Dominio, Modelo Operacional, arquitectura basada en el Negocio, organización en monorepo, Modelo Relacional, DER y Diccionario de Datos aprobados. Preparación de ADR-003.
+**Estado general:** Filosofía del Producto, Modelo de Dominio, Modelo Operacional, arquitectura basada en el Negocio, organización en monorepo, Frontend con Nuxt 4, Modelo Relacional, DER y Diccionario de Datos aprobados. Preparación de ADR-004.
 
 ---
 
@@ -32,6 +32,7 @@
 
 * ✅ ADR-001 - Arquitectura Basada en el Negocio
 * ✅ ADR-002 - Monorepo
+* ✅ ADR-003 - Frontend con Nuxt 4
 
 ---
 
@@ -50,21 +51,21 @@ Pendientes.
 
 # Documento Actual
 
-ADR-002 - Monorepo (Approved)
+ADR-003 - Frontend con Nuxt 4 (Approved)
 
 Objetivo:
 
-Evaluar y documentar cómo organizar el código fuente de Arauco Project Hub, preservando el Lenguaje Ubicuo, la cohesión del producto y la separación entre el dominio y los detalles tecnológicos.
+Evaluar y documentar la tecnología principal del Frontend, verificando que permita expresar el Lenguaje Ubicuo, representar el ciclo de vida de la Iniciativa y mantener separados el dominio y los detalles del framework.
 
 ---
 
 # Siguiente Objetivo
 
-ADR-003 - Frontend con Nuxt 4
+ADR-004 - Backend con .NET 10
 
 Objetivo:
 
-Evaluar y documentar la tecnología principal del Frontend, verificando que permita expresar el Lenguaje Ubicuo, representar el ciclo de vida de la Iniciativa y mantener separados el dominio y los detalles del framework.
+Evaluar y documentar la tecnología principal del Backend, verificando que permita expresar el Modelo de Dominio, proteger las reglas de la Iniciativa y mantener separados el dominio y los detalles del framework.
 
 ---
 
@@ -100,7 +101,7 @@ Diccionario de Datos aprobado.
 
 # Última Decisión Importante
 
-Arauco Project Hub se organiza en un monorepo que mantiene juntos el Engineering Playbook y los componentes del producto, conservando límites y ciclos de validación y despliegue independientes.
+El Frontend se implementa con Nuxt 4, Vue 3 y TypeScript, manteniendo las reglas del dominio fuera del framework y postergando el modo de renderizado hasta contar con requerimientos aprobados.
 
 ---
 
