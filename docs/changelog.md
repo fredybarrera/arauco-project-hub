@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### ADR-005 - Proveedor de Identidad y Estrategia de Sesión
+
+**Documento aprobado:** ADR-005 - Proveedor de Identidad y Estrategia de Sesión
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se evaluaron identidad local, credencial manejada por el navegador y sesión mediada por el Frontend.
+* Se decidió utilizar un proveedor corporativo mediante identidad federada.
+* Se estableció que Arauco Project Hub no administrará contraseñas.
+* Se prefirió una sesión mediada por el servidor de Nuxt para reducir exposición de credenciales.
+* Se mantuvo la autorización contextual dentro del Backend.
+* Se evitó convertir grupos externos en una segunda fuente de permisos.
+* Se documentaron consecuencias, riesgos, criterios de cumplimiento y validaciones de implementación.
+* Se definió ADR-006 - Tecnología y Estrategia de Persistencia como el siguiente documento del Engineering Playbook.
+
+---
+
 ### Autenticación
 
 **Documento aprobado:** Autenticación

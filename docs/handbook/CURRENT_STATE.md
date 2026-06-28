@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 2 - Architecture (En progreso)
 
-**Estado general:** Filosofía del Producto y SRS-001 a SRS-010 aprobados. Arquitecturas principales, Seguridad y Autenticación aprobadas. Preparación de la decisión sobre identidad y sesión.
+**Estado general:** Filosofía del Producto y SRS-001 a SRS-010 aprobados. Arquitecturas principales, Seguridad, Autenticación e identidad federada aprobadas. Preparación de la decisión de persistencia.
 
 ---
 
@@ -39,6 +39,7 @@
 * ✅ ADR-002 - Monorepo
 * ✅ ADR-003 - Frontend con Nuxt 4
 * ✅ ADR-004 - Backend con .NET 10
+* ✅ ADR-005 - Proveedor de Identidad y Estrategia de Sesión
 
 ---
 
@@ -70,21 +71,21 @@ Pendientes.
 
 # Documento Actual
 
-Autenticación (Approved)
+ADR-005 - Proveedor de Identidad y Estrategia de Sesión (Approved)
 
 Objetivo:
 
-Definir el contrato y flujo de autenticación entre Frontend y API, manteniendo separados identidad, sesión, autorización y reglas del dominio.
+Utilizar identidad corporativa federada y preferir una sesión mediada por el servidor de Nuxt, manteniendo los permisos dentro de Arauco Project Hub.
 
 ---
 
 # Siguiente Objetivo
 
-ADR-005 - Proveedor de Identidad y Estrategia de Sesión
+ADR-006 - Tecnología y Estrategia de Persistencia
 
 Objetivo:
 
-Evaluar y seleccionar el proveedor corporativo, protocolo, flujo y estrategia de sesión que permitan autenticar identidades de forma segura con Nuxt 4 y ASP.NET Core 10.
+Evaluar y seleccionar la tecnología de persistencia, acceso a datos, reconstrucción del Aggregate, concurrencia y transacciones que implementarán el Modelo Relacional aprobado.
 
 ---
 
@@ -112,15 +113,15 @@ Diccionario de Datos aprobado.
 
 # Próximos Hitos
 
-* ADR-005 - Proveedor de Identidad y Estrategia de Sesión
-* Persistencia
+* ADR-006 - Tecnología y Estrategia de Persistencia
+* Arquitectura de Persistencia
 * Observabilidad
 
 ---
 
 # Última Decisión Importante
 
-Autenticación define el flujo general entre Frontend, proveedor de identidad, API y Backend, y prohíbe utilizar datos libres del consumidor como identidad responsable.
+ADR-005 adopta identidad corporativa federada, evita administrar contraseñas y prefiere una sesión mediada por el servidor de Nuxt para reducir credenciales accesibles desde el navegador.
 
 ---
 
