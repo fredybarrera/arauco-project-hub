@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### ADR-004 - Backend con .NET 10
+
+**Documento aprobado:** ADR-004 - Backend con .NET 10
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se evaluaron .NET 10 con ASP.NET Core, Node.js con TypeScript y NestJS, y Java con Spring Boot.
+* Se decidió implementar el Backend con .NET 10, C# y ASP.NET Core 10.
+* Se estableció que .NET y ASP.NET Core son detalles tecnológicos y no definen conceptos ni reglas del dominio.
+* Se exigió mantener las reglas del dominio separadas de la API, la persistencia y las integraciones.
+* Se definieron contratos de API explícitos y separados de las entidades del dominio.
+* Se documentaron riesgos de acoplamiento al framework, persistencia como fuente del modelo y complejidad accidental.
+* Se postergaron la persistencia, autenticación, estilo de endpoints y despliegue para decisiones posteriores.
+* Se definió la Visión de Arquitectura como el siguiente documento del Engineering Playbook.
+
+---
+
 ### ADR-003 - Frontend con Nuxt 4
 
 **Documento aprobado:** ADR-003 - Frontend con Nuxt 4
