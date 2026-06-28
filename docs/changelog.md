@@ -6,6 +6,26 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### Arquitectura del Frontend
+
+**Documento aprobado:** Arquitectura del Frontend
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se definieron las responsabilidades internas del Frontend con Nuxt 4, Vue 3 y TypeScript.
+* Se separaron navegación y páginas, presentación, coordinación de capacidades, estado de interfaz y comunicación con la API.
+* Se mantuvo a la Iniciativa como centro del contexto presentado.
+* Se establecieron contratos explícitos y límites para la comunicación con la API.
+* Se documentaron los flujos de consulta y acción.
+* Se definieron criterios para validación, errores, seguridad, accesibilidad y pruebas.
+* Se protegieron las reglas del dominio de páginas, componentes, middleware y estado del cliente.
+* Se mantuvieron Pendientes el diseño de la API, renderizado, autenticación, estilos y estructura física.
+* Se definió el Diseño de la API como el siguiente documento del Engineering Playbook.
+
+---
+
 ### Arquitectura del Backend
 
 **Documento aprobado:** Arquitectura del Backend
