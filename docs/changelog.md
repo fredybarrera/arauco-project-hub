@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### ADR-002 - Monorepo
+
+**Documento aprobado:** ADR-002 - Monorepo
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se evaluaron repositorios separados, una organización híbrida y un monorepo.
+* Se decidió mantener el Engineering Playbook y los componentes de Arauco Project Hub en un único repositorio Git.
+* Se estableció que compartir repositorio no implica un despliegue único ni una única tecnología.
+* Se exigieron límites, dependencias y validaciones explícitas para cada componente.
+* Se protegió la trazabilidad entre documentación e implementación.
+* Se documentaron riesgos de acoplamiento accidental, validaciones lentas y organización orientada por tecnología.
+* Se definieron criterios para revisar la decisión si aparecen límites operacionales reales.
+* Se definió ADR-003 - Frontend con Nuxt 4 como el siguiente documento del Engineering Playbook.
+
+---
+
 ### Diccionario de Datos
 
 **Documento aprobado:** Diccionario de Datos

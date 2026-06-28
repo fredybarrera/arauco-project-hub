@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 2 - Architecture (En progreso)
 
-**Estado general:** Filosofía del Producto, Modelo de Dominio, Modelo Operacional, arquitectura basada en el Negocio, Modelo Relacional, DER y Diccionario de Datos aprobados. Preparación de ADR-002.
+**Estado general:** Filosofía del Producto, Modelo de Dominio, Modelo Operacional, arquitectura basada en el Negocio, organización en monorepo, Modelo Relacional, DER y Diccionario de Datos aprobados. Preparación de ADR-003.
 
 ---
 
@@ -31,6 +31,7 @@
 ## ADR
 
 * ✅ ADR-001 - Arquitectura Basada en el Negocio
+* ✅ ADR-002 - Monorepo
 
 ---
 
@@ -49,21 +50,21 @@ Pendientes.
 
 # Documento Actual
 
-Diccionario de Datos (Approved)
+ADR-002 - Monorepo (Approved)
 
 Objetivo:
 
-Definir los nombres físicos, significados, obligatoriedad, claves y tipos lógicos de los datos representados en el DER, sin seleccionar todavía una tecnología de persistencia.
+Evaluar y documentar cómo organizar el código fuente de Arauco Project Hub, preservando el Lenguaje Ubicuo, la cohesión del producto y la separación entre el dominio y los detalles tecnológicos.
 
 ---
 
 # Siguiente Objetivo
 
-ADR-002 - Monorepo
+ADR-003 - Frontend con Nuxt 4
 
 Objetivo:
 
-Evaluar y documentar cómo organizar el código fuente de Arauco Project Hub, preservando el Lenguaje Ubicuo, la cohesión del producto y la separación entre el dominio y los detalles tecnológicos.
+Evaluar y documentar la tecnología principal del Frontend, verificando que permita expresar el Lenguaje Ubicuo, representar el ciclo de vida de la Iniciativa y mantener separados el dominio y los detalles del framework.
 
 ---
 
@@ -99,7 +100,7 @@ Diccionario de Datos aprobado.
 
 # Última Decisión Importante
 
-El Diccionario de Datos define los nombres físicos provisionales, tipos lógicos, obligatoriedad y claves derivados del Modelo Relacional y del DER aprobados, sin seleccionar una tecnología de persistencia.
+Arauco Project Hub se organiza en un monorepo que mantiene juntos el Engineering Playbook y los componentes del producto, conservando límites y ciclos de validación y despliegue independientes.
 
 ---
 
