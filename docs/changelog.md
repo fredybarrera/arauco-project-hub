@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### SRS-008 - Flujos de Negocio
+
+**Documento aprobado:** SRS-008 - Flujos de Negocio
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se definieron nueve Flujos de Negocio de extremo a extremo.
+* Se cubrieron registro, consulta, evaluación, preparación, Desarrollo, QAS y Producción.
+* Se mantuvo la continuidad de la Iniciativa hacia Operación.
+* Se documentaron el registro y la atención de Solicitudes.
+* Se estableció que Cancelar o Cerrar no elimina la memoria trazable.
+* Se integraron permisos, reglas, alternativas, resultados e Historial.
+* Se mantuvieron explícitos los pasos que dependen de definiciones Pendientes.
+* Se definió SRS-009 - Casos de Uso como el siguiente documento del Engineering Playbook.
+
+---
+
 ### SRS-007 - Modelo de Permisos
 
 **Documento aprobado:** SRS-007 - Modelo de Permisos

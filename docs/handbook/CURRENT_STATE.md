@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 2 - Architecture (En progreso)
 
-**Estado general:** Filosofía del Producto, modelos, requerimientos y Modelo de Permisos aprobados. Arquitecturas principales y Diseño de la API aprobados. Preparación de los Flujos de Negocio.
+**Estado general:** Filosofía del Producto, modelos, requerimientos, permisos y Flujos de Negocio aprobados. Arquitecturas principales y Diseño de la API aprobados. Preparación de los Casos de Uso.
 
 ---
 
@@ -21,6 +21,7 @@
 * ✅ SRS-005 - Requerimientos Funcionales
 * ✅ SRS-006 - Requerimientos No Funcionales
 * ✅ SRS-007 - Modelo de Permisos
+* ✅ SRS-008 - Flujos de Negocio
 * ✅ SRS-010 - Modelo Relacional
 
 ---
@@ -66,21 +67,21 @@ Pendientes.
 
 # Documento Actual
 
-SRS-007 - Modelo de Permisos (Approved)
+SRS-008 - Flujos de Negocio (Approved)
 
 Objetivo:
 
-Definir qué actores pueden consultar o ejecutar las capacidades aprobadas dentro del contexto de una Iniciativa, aplicando transparencia, menor privilegio y responsabilidad visible.
+Definir los recorridos funcionales de extremo a extremo mediante los cuales los actores gestionan una Iniciativa y sus Solicitudes, conservando estados, permisos y trazabilidad.
 
 ---
 
 # Siguiente Objetivo
 
-SRS-008 - Flujos de Negocio
+SRS-009 - Casos de Uso
 
 Objetivo:
 
-Definir los recorridos funcionales de extremo a extremo mediante los cuales los actores gestionan una Iniciativa y sus Solicitudes, conservando estados, permisos y trazabilidad.
+Definir interacciones verificables entre los actores y Arauco Project Hub para ejecutar las capacidades y Flujos de Negocio aprobados.
 
 ---
 
@@ -108,15 +109,15 @@ Diccionario de Datos aprobado.
 
 # Próximos Hitos
 
-* Flujos de Negocio
 * Casos de Uso
 * Catálogo de operaciones de la API
+* Persistencia
 
 ---
 
 # Última Decisión Importante
 
-SRS-007 define el Modelo de Permisos contextual por Iniciativa, asigna 31 reglas de permiso y mantiene denegadas las capacidades cuya autoridad aún no ha sido aprobada.
+SRS-008 define nueve Flujos de Negocio de extremo a extremo, desde el registro de una Iniciativa hasta su Operación y evolución mediante Solicitudes.
 
 ---
 
