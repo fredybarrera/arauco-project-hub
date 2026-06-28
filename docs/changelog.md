@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### Arquitectura de Observabilidad
+
+**Documento aprobado:** Arquitectura de Observabilidad
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se definieron registros, métricas y trazas con responsabilidades diferenciadas.
+* Se estableció correlación entre Frontend, API, Backend y adaptaciones.
+* Se mantuvo la observabilidad separada del Historial.
+* Se definieron señales para disponibilidad, errores, rendimiento, recursos y dependencias.
+* Se establecieron responsabilidades para Frontend, API, Backend, persistencia e identidad.
+* Se limitaron datos sensibles, credenciales, secretos y dimensiones de alta variabilidad.
+* Se documentaron criterios para errores, fallos de observabilidad, pruebas y Ambientes.
+* Se definió ADR-007 - Plataforma y Estándar de Observabilidad como el siguiente documento del Engineering Playbook.
+
+---
+
 ### Arquitectura de Persistencia
 
 **Documento aprobado:** Arquitectura de Persistencia

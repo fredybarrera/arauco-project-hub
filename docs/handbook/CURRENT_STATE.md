@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 2 - Architecture (En progreso)
 
-**Estado general:** Filosofía del Producto, SRS-001 a SRS-010, decisiones arquitectónicas principales y Arquitectura de Persistencia aprobados. Preparación de la Arquitectura de Observabilidad.
+**Estado general:** Filosofía del Producto, SRS-001 a SRS-010 y arquitecturas principales aprobados. Preparación de la decisión tecnológica de observabilidad.
 
 ---
 
@@ -62,6 +62,7 @@
 * ✅ Arquitectura de Seguridad
 * ✅ Autenticación
 * ✅ Arquitectura de Persistencia
+* ✅ Arquitectura de Observabilidad
 
 ---
 
@@ -73,21 +74,21 @@ Pendientes.
 
 # Documento Actual
 
-Arquitectura de Persistencia (Approved)
+Arquitectura de Observabilidad (Approved)
 
 Objetivo:
 
-Implementar ADR-006 mediante límites, flujos, mapeos, reconstrucción, consultas, transacciones, concurrencia y evolución controlada del esquema.
+Correlacionar interacciones y observar disponibilidad, errores, rendimiento, recursos y dependencias sin exponer información sensible ni sustituir el Historial.
 
 ---
 
 # Siguiente Objetivo
 
-Arquitectura de Observabilidad
+ADR-007 - Plataforma y Estándar de Observabilidad
 
 Objetivo:
 
-Definir cómo Arauco Project Hub observará solicitudes, errores, rendimiento, dependencias y operaciones relevantes sin exponer información sensible ni confundir observabilidad con Historial.
+Seleccionar la plataforma, el estándar de instrumentación, el transporte y la estrategia de almacenamiento de señales que implementarán la Arquitectura de Observabilidad.
 
 ---
 
@@ -117,13 +118,14 @@ Diccionario de Datos aprobado.
 
 * ADR-006 - Tecnología y Estrategia de Persistencia
 * Arquitectura de Persistencia
-* Observabilidad
+* Arquitectura de Observabilidad
+* ADR-007 - Plataforma y Estándar de Observabilidad
 
 ---
 
 # Última Decisión Importante
 
-ADR-006 adopta Azure SQL Database y Entity Framework Core 10, mantiene la persistencia como adaptación del dominio y define concurrencia optimista y transacciones locales.
+La Arquitectura de Observabilidad define correlación, registros, métricas y trazas, y mantiene estas señales separadas del Historial.
 
 ---
 
