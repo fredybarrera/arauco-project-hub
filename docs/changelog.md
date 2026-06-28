@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### SRS-007 - Modelo de Permisos
+
+**Documento aprobado:** SRS-007 - Modelo de Permisos
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se definió un Modelo de Permisos contextual por Iniciativa.
+* Se separaron identidad, Participante y Rol de Participación.
+* Se establecieron transparencia, menor privilegio y autorización en el Backend.
+* Se documentaron 31 reglas para consulta y acciones aprobadas.
+* Se definieron permisos sobre Iniciativas, Recursos, Documentos, Conversaciones, Solicitudes, Versiones y Despliegues.
+* Se prohibió modificar el Historial para sustituir lo ocurrido.
+* Se mantuvieron denegadas las capacidades cuya autoridad permanece Pendiente.
+* Se definió SRS-008 - Flujos de Negocio como el siguiente documento del Engineering Playbook.
+
+---
+
 ### SRS-006 - Requerimientos No Funcionales
 
 **Documento aprobado:** SRS-006 - Requerimientos No Funcionales

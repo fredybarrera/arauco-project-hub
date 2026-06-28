@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 2 - Architecture (En progreso)
 
-**Estado general:** Filosofía del Producto, modelos, Requerimientos Funcionales y Requerimientos No Funcionales aprobados. Arquitecturas principales y Diseño de la API aprobados. Preparación del Modelo de Permisos.
+**Estado general:** Filosofía del Producto, modelos, requerimientos y Modelo de Permisos aprobados. Arquitecturas principales y Diseño de la API aprobados. Preparación de los Flujos de Negocio.
 
 ---
 
@@ -20,6 +20,7 @@
 * ✅ SRS-004 - Modelo Operacional
 * ✅ SRS-005 - Requerimientos Funcionales
 * ✅ SRS-006 - Requerimientos No Funcionales
+* ✅ SRS-007 - Modelo de Permisos
 * ✅ SRS-010 - Modelo Relacional
 
 ---
@@ -65,21 +66,21 @@ Pendientes.
 
 # Documento Actual
 
-SRS-006 - Requerimientos No Funcionales (Approved)
+SRS-007 - Modelo de Permisos (Approved)
 
 Objetivo:
 
-Definir atributos de calidad y restricciones verificables para seguridad, confiabilidad, rendimiento, accesibilidad, mantenibilidad, observabilidad y operación.
+Definir qué actores pueden consultar o ejecutar las capacidades aprobadas dentro del contexto de una Iniciativa, aplicando transparencia, menor privilegio y responsabilidad visible.
 
 ---
 
 # Siguiente Objetivo
 
-SRS-007 - Modelo de Permisos
+SRS-008 - Flujos de Negocio
 
 Objetivo:
 
-Definir qué actores pueden consultar o ejecutar las capacidades aprobadas dentro del contexto de una Iniciativa, aplicando menor privilegio, transparencia y responsabilidad visible.
+Definir los recorridos funcionales de extremo a extremo mediante los cuales los actores gestionan una Iniciativa y sus Solicitudes, conservando estados, permisos y trazabilidad.
 
 ---
 
@@ -107,15 +108,15 @@ Diccionario de Datos aprobado.
 
 # Próximos Hitos
 
-* Modelo de Permisos
+* Flujos de Negocio
+* Casos de Uso
 * Catálogo de operaciones de la API
-* Persistencia
 
 ---
 
 # Última Decisión Importante
 
-SRS-006 define 48 Requerimientos No Funcionales y mantiene Pendientes los umbrales cuantitativos que requieren validación con los responsables correspondientes.
+SRS-007 define el Modelo de Permisos contextual por Iniciativa, asigna 31 reglas de permiso y mantiene denegadas las capacidades cuya autoridad aún no ha sido aprobada.
 
 ---
 
