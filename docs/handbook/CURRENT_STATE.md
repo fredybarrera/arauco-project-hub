@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 2 - Architecture (En progreso)
 
-**Estado general:** Filosofía del Producto, modelos de Dominio, Operacional y Relacional, decisiones tecnológicas, Visión de Arquitectura, Módulos y Modelo de Dominio Arquitectónico aprobados. Preparación de la Arquitectura del Backend.
+**Estado general:** Filosofía del Producto, modelos aprobados y arquitectura basada en el Negocio consolidados. Arquitectura del Backend aprobada. Preparación de la Arquitectura del Frontend.
 
 ---
 
@@ -49,6 +49,7 @@
 * ✅ Visión de Arquitectura
 * ✅ Módulos
 * ✅ Modelo de Dominio Arquitectónico
+* ✅ Arquitectura del Backend
 
 ---
 
@@ -60,21 +61,21 @@ Pendientes.
 
 # Documento Actual
 
-Modelo de Dominio Arquitectónico (Approved)
+Arquitectura del Backend (Approved)
 
 Objetivo:
 
-Definir cómo se expresa el Modelo de Dominio aprobado dentro del módulo Iniciativas, preservando Aggregate Root, entidades, Objetos de Valor, reglas y eventos sin acoplarlos al framework o la persistencia.
+Definir cómo el Backend con .NET 10 coordina la API, las capacidades del módulo Iniciativas, el Modelo de Dominio, la persistencia y las integraciones manteniendo dependencias explícitas.
 
 ---
 
 # Siguiente Objetivo
 
-Arquitectura del Backend
+Arquitectura del Frontend
 
 Objetivo:
 
-Definir cómo el Backend con .NET 10 coordina la API, las capacidades del módulo Iniciativas, el Modelo de Dominio, la persistencia y las integraciones manteniendo dependencias explícitas.
+Definir cómo el Frontend con Nuxt 4 organiza navegación, presentación, comunicación con la API y estado de interfaz sin duplicar reglas del dominio.
 
 ---
 
@@ -110,7 +111,7 @@ Diccionario de Datos aprobado.
 
 # Última Decisión Importante
 
-El Modelo de Dominio Arquitectónico mantiene a la Iniciativa como Aggregate Root principal, protege las reglas mediante comportamiento explícito y conserva el dominio independiente de frameworks y persistencia.
+La Arquitectura del Backend separa entrada y API, coordinación, módulo Iniciativas y adaptaciones técnicas, manteniendo las dependencias dirigidas hacia el dominio.
 
 ---
 

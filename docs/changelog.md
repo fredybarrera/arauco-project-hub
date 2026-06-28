@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### Arquitectura del Backend
+
+**Documento aprobado:** Arquitectura del Backend
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se definieron las responsabilidades internas del Backend con .NET 10.
+* Se separaron entrada y API, coordinación, módulo Iniciativas y adaptaciones técnicas.
+* Se estableció la dirección de dependencias hacia el dominio.
+* Se documentaron los flujos de modificación y consulta.
+* Se definieron criterios para consistencia, validación, errores, trazabilidad y pruebas.
+* Se protegió al Modelo de Dominio de ASP.NET Core, persistencia e integraciones.
+* Se mantuvieron Pendientes el diseño de API, persistencia, autenticación, observabilidad y estructura física.
+* Se definió la Arquitectura del Frontend como el siguiente documento del Engineering Playbook.
+
+---
+
 ### Modelo de Dominio Arquitectónico
 
 **Documento aprobado:** Modelo de Dominio Arquitectónico
