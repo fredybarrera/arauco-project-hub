@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### Módulos
+
+**Documento aprobado:** Módulos
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se definió un único módulo de dominio inicial denominado Iniciativas.
+* Se mantuvo a la Iniciativa como Aggregate Root principal y centro del contexto.
+* Se estableció que las entidades relacionadas no constituyen módulos independientes.
+* Se documentaron las responsabilidades internas de Participantes, Componentes, Recursos, Documentos, Conversaciones, Solicitudes, Versiones, Despliegues e Historial.
+* Se definieron límites técnicos y dependencias permitidas para Frontend, API, persistencia e integraciones.
+* Se establecieron criterios para proponer nuevos módulos.
+* Se exigió formalizar mediante ADR cualquier cambio futuro que agregue o divida módulos.
+* Se definió el Modelo de Dominio Arquitectónico como el siguiente documento del Engineering Playbook.
+
+---
+
 ### Visión de Arquitectura
 
 **Documento aprobado:** Visión de Arquitectura

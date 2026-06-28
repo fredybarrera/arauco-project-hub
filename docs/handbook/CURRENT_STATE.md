@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 2 - Architecture (En progreso)
 
-**Estado general:** Filosofía del Producto, Modelo de Dominio, Modelo Operacional, arquitectura basada en el Negocio, organización en monorepo, tecnologías principales y Visión de Arquitectura aprobadas. Preparación de Módulos.
+**Estado general:** Filosofía del Producto, Modelo de Dominio, Modelo Operacional, arquitectura basada en el Negocio, organización en monorepo, tecnologías principales, Visión de Arquitectura y Módulos aprobados. Preparación del Modelo de Dominio Arquitectónico.
 
 ---
 
@@ -47,6 +47,7 @@
 ## Arquitectura
 
 * ✅ Visión de Arquitectura
+* ✅ Módulos
 
 ---
 
@@ -58,21 +59,21 @@ Pendientes.
 
 # Documento Actual
 
-Visión de Arquitectura (Approved)
+Módulos (Approved)
 
 Objetivo:
 
-Consolidar la vista de alto nivel de Arauco Project Hub, mostrando cómo el Frontend, la API, el Backend, el dominio, la persistencia y las integraciones colaboran sin contradecir los documentos aprobados.
+Definir los módulos y sus responsabilidades a partir del dominio aprobado, manteniendo a la Iniciativa como centro y evitando fragmentar el producto según entidades o tecnologías.
 
 ---
 
 # Siguiente Objetivo
 
-Módulos
+Modelo de Dominio Arquitectónico
 
 Objetivo:
 
-Definir los módulos y sus responsabilidades a partir del dominio aprobado, manteniendo a la Iniciativa como centro y evitando fragmentar el producto según entidades o tecnologías.
+Definir cómo se expresa el Modelo de Dominio aprobado dentro del módulo Iniciativas, preservando Aggregate Root, entidades, Objetos de Valor, reglas y eventos sin acoplarlos al framework o la persistencia.
 
 ---
 
@@ -108,7 +109,7 @@ Diccionario de Datos aprobado.
 
 # Última Decisión Importante
 
-La Visión de Arquitectura establece las responsabilidades y dependencias permitidas entre Frontend, API, Backend, dominio, persistencia e integraciones.
+Arauco Project Hub inicia con un único módulo de dominio denominado Iniciativas; sus entidades relacionadas permanecen dentro del contexto de la Iniciativa y no se convierten automáticamente en módulos independientes.
 
 ---
 
