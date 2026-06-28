@@ -6,6 +6,24 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### ADR-001 - Arquitectura Basada en el Negocio
+
+**Documento aprobado:** ADR-001 - Arquitectura Basada en el Negocio
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se formalizó que la arquitectura de Arauco Project Hub se deriva del dominio aprobado.
+* Se evaluaron las alternativas de organización por tecnología, por pantallas o formularios y por dominio.
+* Se establecieron criterios para proteger a la Iniciativa como centro del producto.
+* Se definió la separación entre las reglas del dominio y los detalles tecnológicos.
+* Se documentaron las implicancias para el Modelo Relacional, Backend, API, Frontend e integraciones.
+* Se incorporaron criterios de cumplimiento y trazabilidad hacia PHIL-001 y los SRS aprobados.
+* Se inició formalmente la Fase 2 - Architecture.
+
+---
+
 ### PHIL-001 - Filosofía del Producto
 
 **Documento aprobado:** PHIL-001 - Filosofía del Producto

@@ -4,9 +4,9 @@
 
 **Proyecto:** Arauco Project Hub
 
-**Fase actual:** Fase 1 - Domain Design (Completada)
+**Fase actual:** Fase 2 - Architecture (En progreso)
 
-**Estado general:** Filosofía del Producto, Modelo de Dominio y Modelo Operacional aprobados. Preparación de decisiones arquitectónicas.
+**Estado general:** Filosofía del Producto, Modelo de Dominio, Modelo Operacional y arquitectura basada en el Negocio aprobados. Preparación del Modelo Relacional.
 
 ---
 
@@ -29,7 +29,7 @@
 
 ## ADR
 
-Pendientes.
+* ✅ ADR-001 - Arquitectura Basada en el Negocio
 
 ---
 
@@ -41,23 +41,23 @@ Pendientes.
 
 # Documento Actual
 
-PHIL-001 - Filosofía del Producto (Approved)
+ADR-001 - Arquitectura Basada en el Negocio (Approved)
 
 Objetivo:
 
-Definir los principios que orientan las decisiones funcionales, de dominio, arquitectónicas y técnicas de Arauco Project Hub.
+Formalizar cómo las decisiones arquitectónicas deben derivarse del dominio aprobado.
 
-Este documento establece la prioridad del dominio, la simplicidad, la trazabilidad y la documentación como fundamentos del producto.
+Este documento establece que la arquitectura y las tecnologías deben proteger la Filosofía del Producto, el Lenguaje Ubicuo, el Modelo de Dominio y el Modelo Operacional.
 
 ---
 
 # Siguiente Objetivo
 
-ADR-001 - Arquitectura Basada en el Negocio
+Modelo Relacional
 
 Objetivo:
 
-Formalizar cómo las decisiones arquitectónicas deberán derivarse del dominio y proteger la Filosofía del Producto, el Lenguaje Ubicuo, el Modelo de Dominio y el Modelo Operacional.
+Representar el Modelo de Dominio aprobado mediante estructuras relacionales, preservando sus relaciones, reglas y trazabilidad sin convertir la persistencia en la fuente de definición del dominio.
 
 ---
 
@@ -79,7 +79,6 @@ Modelo Operacional aprobado.
 
 # Próximos Hitos
 
-* ADR-001 - Arquitectura Basada en el Negocio
 * Modelo Relacional
 * Arquitectura
 * Backend
@@ -89,7 +88,7 @@ Modelo Operacional aprobado.
 
 # Última Decisión Importante
 
-La tecnología debe adaptarse al dominio y no definirlo.
+La arquitectura de Arauco Project Hub se deriva del dominio aprobado y mantiene separadas sus reglas de los detalles tecnológicos.
 
 ---
 
