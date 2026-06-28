@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### Diseño de la API
+
+**Documento aprobado:** Diseño de la API
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se definieron los principios generales de diseño de la API.
+* Se mantuvo a la Iniciativa como recurso y contexto principal.
+* Se separaron contratos externos, coordinación, dominio y persistencia.
+* Se establecieron criterios para consultas, acciones, validación, resultados y errores.
+* Se definieron límites para concurrencia, idempotencia, versionado, seguridad y observabilidad.
+* Se exigió trazabilidad desde cada operación hacia un requerimiento aprobado.
+* Se mantuvo Pendiente el catálogo de endpoints hasta aprobar los Requerimientos Funcionales.
+* Se definió SRS-005 - Requerimientos Funcionales como el siguiente documento del Engineering Playbook.
+
+---
+
 ### Arquitectura del Frontend
 
 **Documento aprobado:** Arquitectura del Frontend
