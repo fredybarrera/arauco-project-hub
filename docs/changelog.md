@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### SRS-006 - Requerimientos No Funcionales
+
+**Documento aprobado:** SRS-006 - Requerimientos No Funcionales
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se definieron 48 Requerimientos No Funcionales.
+* Se cubrieron seguridad, privacidad, disponibilidad, rendimiento e integridad.
+* Se incorporaron accesibilidad, compatibilidad, observabilidad, mantenibilidad y recuperación.
+* Se definieron mecanismos de verificación y evidencia.
+* Se mantuvieron separadas las necesidades de calidad de las decisiones tecnológicas.
+* Se dejaron Pendientes los umbrales cuantitativos que requieren validación responsable.
+* Se exigió documentar mediante ADR las decisiones arquitectónicas importantes derivadas.
+* Se definió SRS-007 - Modelo de Permisos como el siguiente documento del Engineering Playbook.
+
+---
+
 ### SRS-005 - Requerimientos Funcionales
 
 **Documento aprobado:** SRS-005 - Requerimientos Funcionales

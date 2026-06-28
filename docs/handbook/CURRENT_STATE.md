@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 2 - Architecture (En progreso)
 
-**Estado general:** Filosofía del Producto, modelos y Requerimientos Funcionales aprobados. Arquitecturas del Backend y del Frontend y Diseño de la API aprobados. Preparación de los Requerimientos No Funcionales.
+**Estado general:** Filosofía del Producto, modelos, Requerimientos Funcionales y Requerimientos No Funcionales aprobados. Arquitecturas principales y Diseño de la API aprobados. Preparación del Modelo de Permisos.
 
 ---
 
@@ -19,6 +19,7 @@
 * ✅ SRS-003 - Modelo de Dominio
 * ✅ SRS-004 - Modelo Operacional
 * ✅ SRS-005 - Requerimientos Funcionales
+* ✅ SRS-006 - Requerimientos No Funcionales
 * ✅ SRS-010 - Modelo Relacional
 
 ---
@@ -64,21 +65,21 @@ Pendientes.
 
 # Documento Actual
 
-SRS-005 - Requerimientos Funcionales (Approved)
+SRS-006 - Requerimientos No Funcionales (Approved)
 
 Objetivo:
 
-Definir las capacidades funcionales de Arauco Project Hub con criterios verificables y trazabilidad hacia la Filosofía del Producto, el Modelo de Dominio y el Modelo Operacional.
+Definir atributos de calidad y restricciones verificables para seguridad, confiabilidad, rendimiento, accesibilidad, mantenibilidad, observabilidad y operación.
 
 ---
 
 # Siguiente Objetivo
 
-SRS-006 - Requerimientos No Funcionales
+SRS-007 - Modelo de Permisos
 
 Objetivo:
 
-Definir atributos de calidad y restricciones verificables para seguridad, rendimiento, disponibilidad, accesibilidad, mantenibilidad, observabilidad y operación sin imponer decisiones tecnológicas prematuras.
+Definir qué actores pueden consultar o ejecutar las capacidades aprobadas dentro del contexto de una Iniciativa, aplicando menor privilegio, transparencia y responsabilidad visible.
 
 ---
 
@@ -106,7 +107,7 @@ Diccionario de Datos aprobado.
 
 # Próximos Hitos
 
-* Requerimientos No Funcionales
+* Modelo de Permisos
 * Catálogo de operaciones de la API
 * Persistencia
 
@@ -114,7 +115,7 @@ Diccionario de Datos aprobado.
 
 # Última Decisión Importante
 
-SRS-005 define 38 Requerimientos Funcionales para gestionar el contexto completo de la Iniciativa, sus responsabilidades relacionadas, su ciclo de vida y su trazabilidad.
+SRS-006 define 48 Requerimientos No Funcionales y mantiene Pendientes los umbrales cuantitativos que requieren validación con los responsables correspondientes.
 
 ---
 
