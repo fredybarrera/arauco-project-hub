@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 2 - Architecture (En progreso)
 
-**Estado general:** Filosofía del Producto, Modelo de Dominio, Modelo Operacional, arquitectura basada en el Negocio, organización en monorepo, tecnologías principales, Visión de Arquitectura y Módulos aprobados. Preparación del Modelo de Dominio Arquitectónico.
+**Estado general:** Filosofía del Producto, modelos de Dominio, Operacional y Relacional, decisiones tecnológicas, Visión de Arquitectura, Módulos y Modelo de Dominio Arquitectónico aprobados. Preparación de la Arquitectura del Backend.
 
 ---
 
@@ -48,6 +48,7 @@
 
 * ✅ Visión de Arquitectura
 * ✅ Módulos
+* ✅ Modelo de Dominio Arquitectónico
 
 ---
 
@@ -59,21 +60,21 @@ Pendientes.
 
 # Documento Actual
 
-Módulos (Approved)
+Modelo de Dominio Arquitectónico (Approved)
 
 Objetivo:
 
-Definir los módulos y sus responsabilidades a partir del dominio aprobado, manteniendo a la Iniciativa como centro y evitando fragmentar el producto según entidades o tecnologías.
+Definir cómo se expresa el Modelo de Dominio aprobado dentro del módulo Iniciativas, preservando Aggregate Root, entidades, Objetos de Valor, reglas y eventos sin acoplarlos al framework o la persistencia.
 
 ---
 
 # Siguiente Objetivo
 
-Modelo de Dominio Arquitectónico
+Arquitectura del Backend
 
 Objetivo:
 
-Definir cómo se expresa el Modelo de Dominio aprobado dentro del módulo Iniciativas, preservando Aggregate Root, entidades, Objetos de Valor, reglas y eventos sin acoplarlos al framework o la persistencia.
+Definir cómo el Backend con .NET 10 coordina la API, las capacidades del módulo Iniciativas, el Modelo de Dominio, la persistencia y las integraciones manteniendo dependencias explícitas.
 
 ---
 
@@ -109,7 +110,7 @@ Diccionario de Datos aprobado.
 
 # Última Decisión Importante
 
-Arauco Project Hub inicia con un único módulo de dominio denominado Iniciativas; sus entidades relacionadas permanecen dentro del contexto de la Iniciativa y no se convierten automáticamente en módulos independientes.
+El Modelo de Dominio Arquitectónico mantiene a la Iniciativa como Aggregate Root principal, protege las reglas mediante comportamiento explícito y conserva el dominio independiente de frameworks y persistencia.
 
 ---
 

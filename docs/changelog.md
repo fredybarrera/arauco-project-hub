@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### Modelo de Dominio Arquitectónico
+
+**Documento aprobado:** Modelo de Dominio Arquitectónico
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se definió cómo expresar el Modelo de Dominio dentro del módulo Iniciativas.
+* Se mantuvo a la Iniciativa como Aggregate Root principal y responsable de la consistencia.
+* Se documentó la representación arquitectónica de entidades y Objetos de Valor.
+* Se estableció que las reglas del dominio no dependen del Frontend, la API o la persistencia.
+* Se definió la relación entre cambios de estado, eventos e Historial.
+* Se documentaron las dependencias permitidas y la adaptación de persistencia.
+* Se conservaron como Pendientes las ambigüedades y definiciones que requieren revisar los SRS.
+* Se definió la Arquitectura del Backend como el siguiente documento del Engineering Playbook.
+
+---
+
 ### Módulos
 
 **Documento aprobado:** Módulos
