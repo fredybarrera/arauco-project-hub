@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 2 - Architecture (En progreso)
 
-**Estado general:** Filosofía del Producto, modelos aprobados y arquitectura basada en el Negocio consolidados. Arquitecturas del Backend y del Frontend y Diseño de la API aprobados. Preparación de los Requerimientos Funcionales.
+**Estado general:** Filosofía del Producto, modelos y Requerimientos Funcionales aprobados. Arquitecturas del Backend y del Frontend y Diseño de la API aprobados. Preparación de los Requerimientos No Funcionales.
 
 ---
 
@@ -18,6 +18,7 @@
 * ✅ SRS-002 - Lenguaje Ubicuo
 * ✅ SRS-003 - Modelo de Dominio
 * ✅ SRS-004 - Modelo Operacional
+* ✅ SRS-005 - Requerimientos Funcionales
 * ✅ SRS-010 - Modelo Relacional
 
 ---
@@ -63,21 +64,21 @@ Pendientes.
 
 # Documento Actual
 
-Diseño de la API (Approved)
+SRS-005 - Requerimientos Funcionales (Approved)
 
 Objetivo:
 
-Definir cómo el Frontend y otros consumidores utilizan las capacidades del Backend mediante contratos explícitos sin exponer el Modelo de Dominio ni la persistencia.
+Definir las capacidades funcionales de Arauco Project Hub con criterios verificables y trazabilidad hacia la Filosofía del Producto, el Modelo de Dominio y el Modelo Operacional.
 
 ---
 
 # Siguiente Objetivo
 
-SRS-005 - Requerimientos Funcionales
+SRS-006 - Requerimientos No Funcionales
 
 Objetivo:
 
-Definir las capacidades funcionales de Arauco Project Hub derivadas del Modelo de Dominio y del Modelo Operacional, con criterios verificables y trazabilidad hacia las necesidades del Negocio.
+Definir atributos de calidad y restricciones verificables para seguridad, rendimiento, disponibilidad, accesibilidad, mantenibilidad, observabilidad y operación sin imponer decisiones tecnológicas prematuras.
 
 ---
 
@@ -105,7 +106,7 @@ Diccionario de Datos aprobado.
 
 # Próximos Hitos
 
-* Requerimientos Funcionales
+* Requerimientos No Funcionales
 * Catálogo de operaciones de la API
 * Persistencia
 
@@ -113,7 +114,7 @@ Diccionario de Datos aprobado.
 
 # Última Decisión Importante
 
-El Diseño de la API organiza contratos y operaciones alrededor de la Iniciativa, separa la validación de forma de las reglas del dominio y prohíbe incorporar operaciones sin requerimientos aprobados.
+SRS-005 define 38 Requerimientos Funcionales para gestionar el contexto completo de la Iniciativa, sus responsabilidades relacionadas, su ciclo de vida y su trazabilidad.
 
 ---
 

@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### SRS-005 - Requerimientos Funcionales
+
+**Documento aprobado:** SRS-005 - Requerimientos Funcionales
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se definieron 38 Requerimientos Funcionales verificables.
+* Se cubrieron Iniciativas, Participantes, Componentes, Recursos, Documentos y Conversaciones.
+* Se definieron capacidades para el ciclo de vida de la Iniciativa y de sus Solicitudes.
+* Se incorporaron Versiones, Despliegues, Historial y soporte de múltiples Negocios.
+* Se mantuvo separada la definición funcional del diseño de pantallas, API y persistencia.
+* Se incorporaron criterios de aceptación y trazabilidad hacia los documentos aprobados.
+* Se conservaron como Pendientes las definiciones que requieren revisar SRS de mayor prioridad.
+* Se definió SRS-006 - Requerimientos No Funcionales como el siguiente documento del Engineering Playbook.
+
+---
+
 ### Diseño de la API
 
 **Documento aprobado:** Diseño de la API
