@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### DER - Diagrama de Entidad-Relación
+
+**Documento aprobado:** DER - Diagrama de Entidad-Relación
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se representaron visualmente las estructuras y relaciones aprobadas en SRS-010.
+* Se documentaron claves primarias, claves foráneas y atributos mínimos.
+* Se definieron las cardinalidades entre las estructuras del Modelo Relacional.
+* Se mantuvo a la Iniciativa como Aggregate Root principal.
+* Se conservaron las relaciones necesarias para la trazabilidad de Documentos, Conversaciones, Solicitudes, Versiones, Despliegues e Historial.
+* Se documentaron las condiciones de integridad y su trazabilidad hacia los documentos aprobados.
+* Se mantuvieron fuera del alcance los tipos físicos, índices y decisiones tecnológicas.
+* Se definió el Diccionario de Datos como el siguiente documento del Engineering Playbook.
+
+---
+
 ### SRS-010 - Modelo Relacional
 
 **Documento aprobado:** SRS-010 - Modelo Relacional

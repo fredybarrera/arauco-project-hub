@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 2 - Architecture (En progreso)
 
-**Estado general:** Filosofía del Producto, Modelo de Dominio, Modelo Operacional, arquitectura basada en el Negocio y Modelo Relacional aprobados. Preparación del DER.
+**Estado general:** Filosofía del Producto, Modelo de Dominio, Modelo Operacional, arquitectura basada en el Negocio, Modelo Relacional y DER aprobados. Preparación del Diccionario de Datos.
 
 ---
 
@@ -34,6 +34,12 @@
 
 ---
 
+## Modelo de Datos
+
+* ✅ DER - Diagrama de Entidad-Relación
+
+---
+
 ## Standards
 
 Pendientes.
@@ -42,21 +48,21 @@ Pendientes.
 
 # Documento Actual
 
-SRS-010 - Modelo Relacional (Approved)
+DER - Diagrama de Entidad-Relación (Approved)
 
 Objetivo:
 
-Representar el Modelo de Dominio aprobado mediante estructuras relacionales, preservando sus relaciones, reglas y trazabilidad sin convertir la persistencia en la fuente de definición del dominio.
+Representar visualmente las estructuras y relaciones aprobadas en SRS-010, manteniendo trazabilidad hacia el Modelo de Dominio y sin incorporar nuevos conceptos.
 
 ---
 
 # Siguiente Objetivo
 
-DER
+Diccionario de Datos
 
 Objetivo:
 
-Representar visualmente las estructuras y relaciones aprobadas en SRS-010, manteniendo trazabilidad hacia el Modelo de Dominio y sin incorporar nuevos conceptos.
+Definir los nombres físicos, significados, obligatoriedad, claves y tipos lógicos de los datos representados en el DER, sin seleccionar todavía una tecnología de persistencia.
 
 ---
 
@@ -76,11 +82,12 @@ Modelo Operacional aprobado.
 
 Modelo Relacional aprobado.
 
+DER aprobado.
+
 ---
 
 # Próximos Hitos
 
-* DER
 * Diccionario de Datos
 * Arquitectura
 * Backend
@@ -90,7 +97,7 @@ Modelo Relacional aprobado.
 
 # Última Decisión Importante
 
-El Modelo Relacional deriva del Modelo de Dominio aprobado, conserva a la Iniciativa como Aggregate Root principal y no reemplaza las reglas del dominio.
+El DER representa visualmente el Modelo Relacional aprobado, conserva a la Iniciativa como Aggregate Root principal y mantiene trazabilidad hacia SRS-010.
 
 ---
 
