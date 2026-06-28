@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### Arquitectura de Persistencia
+
+**Documento aprobado:** Arquitectura de Persistencia
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se definieron los límites y responsabilidades de la adaptación de persistencia.
+* Se separaron los flujos de modificación y consulta.
+* Se estableció la reconstrucción explícita del contexto requerido por cada capacidad.
+* Se mantuvo Entity Framework Core fuera del dominio y de los contratos externos.
+* Se definieron concurrencia optimista y transacciones locales por modificación de una Iniciativa.
+* Se gobernó la evolución del esquema mediante migraciones versionadas y revisadas.
+* Se establecieron criterios para integridad, errores, seguridad, observabilidad y pruebas.
+* Se definió Arquitectura de Observabilidad como el siguiente documento del Engineering Playbook.
+
+---
+
 ### ADR-006 - Tecnología y Estrategia de Persistencia
 
 **Documento aprobado:** ADR-006 - Tecnología y Estrategia de Persistencia

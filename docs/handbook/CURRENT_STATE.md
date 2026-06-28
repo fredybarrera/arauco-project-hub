@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 2 - Architecture (En progreso)
 
-**Estado general:** Filosofía del Producto, SRS-001 a SRS-010 y decisiones arquitectónicas principales aprobados. Preparación de la Arquitectura de Persistencia.
+**Estado general:** Filosofía del Producto, SRS-001 a SRS-010, decisiones arquitectónicas principales y Arquitectura de Persistencia aprobados. Preparación de la Arquitectura de Observabilidad.
 
 ---
 
@@ -61,6 +61,7 @@
 * ✅ Diseño de la API
 * ✅ Arquitectura de Seguridad
 * ✅ Autenticación
+* ✅ Arquitectura de Persistencia
 
 ---
 
@@ -72,21 +73,21 @@ Pendientes.
 
 # Documento Actual
 
-ADR-006 - Tecnología y Estrategia de Persistencia (Approved)
+Arquitectura de Persistencia (Approved)
 
 Objetivo:
 
-Utilizar Azure SQL Database y Entity Framework Core 10, con reconstrucción explícita del Aggregate, concurrencia optimista y transacciones locales.
+Implementar ADR-006 mediante límites, flujos, mapeos, reconstrucción, consultas, transacciones, concurrencia y evolución controlada del esquema.
 
 ---
 
 # Siguiente Objetivo
 
-Arquitectura de Persistencia
+Arquitectura de Observabilidad
 
 Objetivo:
 
-Definir cómo el Backend implementará los límites, flujos, mapeos, reconstrucción, consultas, transacciones, concurrencia y evolución del esquema establecidos por ADR-006.
+Definir cómo Arauco Project Hub observará solicitudes, errores, rendimiento, dependencias y operaciones relevantes sin exponer información sensible ni confundir observabilidad con Historial.
 
 ---
 
