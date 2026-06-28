@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### Visión de Arquitectura
+
+**Documento aprobado:** Visión de Arquitectura
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se consolidaron los drivers y principios arquitectónicos aprobados.
+* Se documentó el contexto de Arauco Project Hub y su vista de alto nivel.
+* Se definieron las responsabilidades del Frontend, API, Backend, dominio, persistencia e integraciones.
+* Se establecieron dependencias permitidas y límites entre componentes.
+* Se describió el flujo general de una interacción desde los actores hasta la persistencia.
+* Se consolidaron las decisiones de monorepo, Nuxt 4 y .NET 10.
+* Se mantuvieron explícitamente Pendientes las decisiones de arquitectura interna, persistencia, seguridad, observabilidad e infraestructura.
+* Se definió Módulos como el siguiente documento del Engineering Playbook.
+
+---
+
 ### ADR-004 - Backend con .NET 10
 
 **Documento aprobado:** ADR-004 - Backend con .NET 10

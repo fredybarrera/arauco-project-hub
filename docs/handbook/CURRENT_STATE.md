@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 2 - Architecture (En progreso)
 
-**Estado general:** Filosofía del Producto, Modelo de Dominio, Modelo Operacional, arquitectura basada en el Negocio, organización en monorepo, Frontend con Nuxt 4, Backend con .NET 10, Modelo Relacional, DER y Diccionario de Datos aprobados. Preparación de la Visión de Arquitectura.
+**Estado general:** Filosofía del Producto, Modelo de Dominio, Modelo Operacional, arquitectura basada en el Negocio, organización en monorepo, tecnologías principales y Visión de Arquitectura aprobadas. Preparación de Módulos.
 
 ---
 
@@ -44,6 +44,12 @@
 
 ---
 
+## Arquitectura
+
+* ✅ Visión de Arquitectura
+
+---
+
 ## Standards
 
 Pendientes.
@@ -52,21 +58,21 @@ Pendientes.
 
 # Documento Actual
 
-ADR-004 - Backend con .NET 10 (Approved)
+Visión de Arquitectura (Approved)
 
 Objetivo:
 
-Evaluar y documentar la tecnología principal del Backend, verificando que permita expresar el Modelo de Dominio, proteger las reglas de la Iniciativa y mantener separados el dominio y los detalles del framework.
+Consolidar la vista de alto nivel de Arauco Project Hub, mostrando cómo el Frontend, la API, el Backend, el dominio, la persistencia y las integraciones colaboran sin contradecir los documentos aprobados.
 
 ---
 
 # Siguiente Objetivo
 
-Visión de Arquitectura
+Módulos
 
 Objetivo:
 
-Consolidar la vista de alto nivel de Arauco Project Hub, mostrando cómo el Frontend, la API, el Backend, el dominio, la persistencia y las integraciones colaboran sin contradecir los documentos aprobados.
+Definir los módulos y sus responsabilidades a partir del dominio aprobado, manteniendo a la Iniciativa como centro y evitando fragmentar el producto según entidades o tecnologías.
 
 ---
 
@@ -102,7 +108,7 @@ Diccionario de Datos aprobado.
 
 # Última Decisión Importante
 
-El Backend se implementa con .NET 10, C# y ASP.NET Core 10, manteniendo las reglas del dominio separadas de la API, la persistencia y las integraciones.
+La Visión de Arquitectura establece las responsabilidades y dependencias permitidas entre Frontend, API, Backend, dominio, persistencia e integraciones.
 
 ---
 
