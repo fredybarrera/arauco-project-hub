@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 2 - Architecture (En progreso)
 
-**Estado general:** Filosofía del Producto, Modelo de Dominio, Modelo Operacional, arquitectura basada en el Negocio, Modelo Relacional y DER aprobados. Preparación del Diccionario de Datos.
+**Estado general:** Filosofía del Producto, Modelo de Dominio, Modelo Operacional, arquitectura basada en el Negocio, Modelo Relacional, DER y Diccionario de Datos aprobados. Preparación de ADR-002.
 
 ---
 
@@ -37,6 +37,7 @@
 ## Modelo de Datos
 
 * ✅ DER - Diagrama de Entidad-Relación
+* ✅ Diccionario de Datos
 
 ---
 
@@ -48,21 +49,21 @@ Pendientes.
 
 # Documento Actual
 
-DER - Diagrama de Entidad-Relación (Approved)
+Diccionario de Datos (Approved)
 
 Objetivo:
 
-Representar visualmente las estructuras y relaciones aprobadas en SRS-010, manteniendo trazabilidad hacia el Modelo de Dominio y sin incorporar nuevos conceptos.
+Definir los nombres físicos, significados, obligatoriedad, claves y tipos lógicos de los datos representados en el DER, sin seleccionar todavía una tecnología de persistencia.
 
 ---
 
 # Siguiente Objetivo
 
-Diccionario de Datos
+ADR-002 - Monorepo
 
 Objetivo:
 
-Definir los nombres físicos, significados, obligatoriedad, claves y tipos lógicos de los datos representados en el DER, sin seleccionar todavía una tecnología de persistencia.
+Evaluar y documentar cómo organizar el código fuente de Arauco Project Hub, preservando el Lenguaje Ubicuo, la cohesión del producto y la separación entre el dominio y los detalles tecnológicos.
 
 ---
 
@@ -84,11 +85,12 @@ Modelo Relacional aprobado.
 
 DER aprobado.
 
+Diccionario de Datos aprobado.
+
 ---
 
 # Próximos Hitos
 
-* Diccionario de Datos
 * Arquitectura
 * Backend
 * Frontend
@@ -97,7 +99,7 @@ DER aprobado.
 
 # Última Decisión Importante
 
-El DER representa visualmente el Modelo Relacional aprobado, conserva a la Iniciativa como Aggregate Root principal y mantiene trazabilidad hacia SRS-010.
+El Diccionario de Datos define los nombres físicos provisionales, tipos lógicos, obligatoriedad y claves derivados del Modelo Relacional y del DER aprobados, sin seleccionar una tecnología de persistencia.
 
 ---
 

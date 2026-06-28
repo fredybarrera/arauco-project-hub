@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### Diccionario de Datos
+
+**Documento aprobado:** Diccionario de Datos
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se definieron los nombres físicos provisionales de las estructuras y datos representados en el DER.
+* Se documentaron los significados, tipos lógicos, obligatoriedad y claves.
+* Se describieron las referencias entre Negocio, Iniciativa y sus estructuras relacionadas.
+* Se registraron los valores gobernados por el dominio y los valores que permanecen Pendientes.
+* Se establecieron condiciones de integridad referencial derivadas de SRS-010 y del DER.
+* Se mantuvieron fuera del alcance los tipos físicos, longitudes, índices y decisiones tecnológicas.
+* Se incorporó trazabilidad hacia SRS-002, SRS-003, SRS-010, ADR-001 y el DER.
+* Se definió ADR-002 - Monorepo como el siguiente documento del Engineering Playbook.
+
+---
+
 ### DER - Diagrama de Entidad-Relación
 
 **Documento aprobado:** DER - Diagrama de Entidad-Relación
