@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 2 - Architecture (En progreso)
 
-**Estado general:** Filosofía del Producto y SRS-001 a SRS-010 aprobados. Arquitecturas principales, Seguridad, Autenticación e identidad federada aprobadas. Preparación de la decisión de persistencia.
+**Estado general:** Filosofía del Producto, SRS-001 a SRS-010 y decisiones arquitectónicas principales aprobados. Preparación de la Arquitectura de Persistencia.
 
 ---
 
@@ -40,6 +40,7 @@
 * ✅ ADR-003 - Frontend con Nuxt 4
 * ✅ ADR-004 - Backend con .NET 10
 * ✅ ADR-005 - Proveedor de Identidad y Estrategia de Sesión
+* ✅ ADR-006 - Tecnología y Estrategia de Persistencia
 
 ---
 
@@ -71,21 +72,21 @@ Pendientes.
 
 # Documento Actual
 
-ADR-005 - Proveedor de Identidad y Estrategia de Sesión (Approved)
+ADR-006 - Tecnología y Estrategia de Persistencia (Approved)
 
 Objetivo:
 
-Utilizar identidad corporativa federada y preferir una sesión mediada por el servidor de Nuxt, manteniendo los permisos dentro de Arauco Project Hub.
+Utilizar Azure SQL Database y Entity Framework Core 10, con reconstrucción explícita del Aggregate, concurrencia optimista y transacciones locales.
 
 ---
 
 # Siguiente Objetivo
 
-ADR-006 - Tecnología y Estrategia de Persistencia
+Arquitectura de Persistencia
 
 Objetivo:
 
-Evaluar y seleccionar la tecnología de persistencia, acceso a datos, reconstrucción del Aggregate, concurrencia y transacciones que implementarán el Modelo Relacional aprobado.
+Definir cómo el Backend implementará los límites, flujos, mapeos, reconstrucción, consultas, transacciones, concurrencia y evolución del esquema establecidos por ADR-006.
 
 ---
 
@@ -121,7 +122,7 @@ Diccionario de Datos aprobado.
 
 # Última Decisión Importante
 
-ADR-005 adopta identidad corporativa federada, evita administrar contraseñas y prefiere una sesión mediada por el servidor de Nuxt para reducir credenciales accesibles desde el navegador.
+ADR-006 adopta Azure SQL Database y Entity Framework Core 10, mantiene la persistencia como adaptación del dominio y define concurrencia optimista y transacciones locales.
 
 ---
 

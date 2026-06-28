@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### ADR-006 - Tecnología y Estrategia de Persistencia
+
+**Documento aprobado:** ADR-006 - Tecnología y Estrategia de Persistencia
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se seleccionaron Azure SQL Database y Entity Framework Core 10.
+* Se mantuvo el dominio independiente de la tecnología de persistencia.
+* Se definió reconstruir únicamente el contexto del Aggregate requerido por cada capacidad.
+* Se adoptó concurrencia optimista mediante un valor técnico de versión.
+* Se estableció consistencia transaccional entre el cambio del Aggregate y su Historial.
+* Se definieron proyecciones sin seguimiento para consultas.
+* Se estableció una evolución versionada y controlada del esquema.
+* Se definió Arquitectura de Persistencia como el siguiente documento del Engineering Playbook.
+
+---
+
 ### ADR-005 - Proveedor de Identidad y Estrategia de Sesión
 
 **Documento aprobado:** ADR-005 - Proveedor de Identidad y Estrategia de Sesión
