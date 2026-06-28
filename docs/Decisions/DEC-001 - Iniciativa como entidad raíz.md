@@ -1,0 +1,1 @@
+Motivo: El ciclo de vida comienza con una iniciativa y puede terminar en una o varias soluciones en producción.
