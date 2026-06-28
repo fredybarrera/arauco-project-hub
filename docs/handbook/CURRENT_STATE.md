@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 2 - Architecture (En progreso)
 
-**Estado general:** Filosofía del Producto, SRS-001 a SRS-010 y arquitecturas principales aprobados. Preparación de la decisión tecnológica de observabilidad.
+**Estado general:** Filosofía del Producto, SRS-001 a SRS-010, arquitecturas principales y decisiones tecnológicas de persistencia y observabilidad aprobados. Revisión de cierre de Architecture.
 
 ---
 
@@ -41,6 +41,7 @@
 * ✅ ADR-004 - Backend con .NET 10
 * ✅ ADR-005 - Proveedor de Identidad y Estrategia de Sesión
 * ✅ ADR-006 - Tecnología y Estrategia de Persistencia
+* ✅ ADR-007 - Plataforma y Estándar de Observabilidad
 
 ---
 
@@ -74,21 +75,21 @@ Pendientes.
 
 # Documento Actual
 
-Arquitectura de Observabilidad (Approved)
+ADR-007 - Plataforma y Estándar de Observabilidad (Approved)
 
 Objetivo:
 
-Correlacionar interacciones y observar disponibilidad, errores, rendimiento, recursos y dependencias sin exponer información sensible ni sustituir el Historial.
+Utilizar Azure Monitor Application Insights, OpenTelemetry y W3C Trace Context, con una estrategia explícita y aislada para la instrumentación del navegador.
 
 ---
 
 # Siguiente Objetivo
 
-ADR-007 - Plataforma y Estándar de Observabilidad
+EST-001 - Estándar Tecnológico
 
 Objetivo:
 
-Seleccionar la plataforma, el estándar de instrumentación, el transporte y la estrategia de almacenamiento de señales que implementarán la Arquitectura de Observabilidad.
+Consolidar las tecnologías y versiones aprobadas, sus condiciones de uso y sus límites, después de verificar el cierre de la Fase 2 - Architecture.
 
 ---
 
@@ -120,12 +121,13 @@ Diccionario de Datos aprobado.
 * Arquitectura de Persistencia
 * Arquitectura de Observabilidad
 * ADR-007 - Plataforma y Estándar de Observabilidad
+* EST-001 - Estándar Tecnológico
 
 ---
 
 # Última Decisión Importante
 
-La Arquitectura de Observabilidad define correlación, registros, métricas y trazas, y mantiene estas señales separadas del Historial.
+ADR-007 adopta Azure Monitor Application Insights, OpenTelemetry y W3C Trace Context, y mantiene una instrumentación específica y aislada para el navegador.
 
 ---
 

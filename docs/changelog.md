@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### ADR-007 - Plataforma y Estándar de Observabilidad
+
+**Documento aprobado:** ADR-007 - Plataforma y Estándar de Observabilidad
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se seleccionó Azure Monitor Application Insights como plataforma principal.
+* Se adoptó OpenTelemetry para los componentes de servidor.
+* Se adoptó W3C Trace Context para correlación.
+* Se definió el SDK JavaScript de Application Insights como excepción para el navegador.
+* Se aisló la telemetría del navegador cuando requiera autenticación local.
+* Se evitó incorporar un OpenTelemetry Collector sin una necesidad validada.
+* Se establecieron controles para identidad, muestreo, volumen, costo y protección de información.
+* Se definió EST-001 - Estándar Tecnológico como el siguiente documento, sujeto a la revisión de cierre de Architecture.
+
+---
+
 ### Arquitectura de Observabilidad
 
 **Documento aprobado:** Arquitectura de Observabilidad
