@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-28
 
+### Arquitectura de Seguridad
+
+**Documento aprobado:** Arquitectura de Seguridad
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se definieron los límites de seguridad entre Frontend, API y Backend.
+* Se separaron autenticación, autorización, reglas del dominio, Historial y observabilidad.
+* Se estableció autorización contextual por Iniciativa en el Backend.
+* Se definieron responsabilidades para identidad, sesiones, protección de datos y secretos.
+* Se documentaron amenazas iniciales, pruebas y criterios de cumplimiento.
+* Se mantuvieron proveedor, protocolo y estrategia de sesión como decisiones Pendientes.
+* Se exigió formalizar mediante ADR las decisiones tecnológicas importantes de seguridad.
+* Se definió Autenticación como el siguiente documento del Engineering Playbook.
+
+---
+
 ### SRS-009 - Casos de Uso
 
 **Documento aprobado:** SRS-009 - Casos de Uso

@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 2 - Architecture (En progreso)
 
-**Estado general:** Filosofía del Producto y SRS-001 a SRS-010 aprobados. Arquitecturas principales y Diseño de la API aprobados. Preparación de la Arquitectura de Seguridad.
+**Estado general:** Filosofía del Producto y SRS-001 a SRS-010 aprobados. Arquitecturas principales, Diseño de la API y Arquitectura de Seguridad aprobados. Preparación del diseño de Autenticación.
 
 ---
 
@@ -57,6 +57,7 @@
 * ✅ Arquitectura del Backend
 * ✅ Arquitectura del Frontend
 * ✅ Diseño de la API
+* ✅ Arquitectura de Seguridad
 
 ---
 
@@ -68,21 +69,21 @@ Pendientes.
 
 # Documento Actual
 
-SRS-009 - Casos de Uso (Approved)
+Arquitectura de Seguridad (Approved)
 
 Objetivo:
 
-Definir interacciones verificables entre los actores y Arauco Project Hub para ejecutar las capacidades y Flujos de Negocio aprobados.
+Definir cómo Frontend, API y Backend colaboran para autenticar identidades, autorizar capacidades, proteger información y conservar trazabilidad.
 
 ---
 
 # Siguiente Objetivo
 
-Arquitectura de Seguridad
+Autenticación
 
 Objetivo:
 
-Definir cómo autenticación, autorización, protección de información y trazabilidad técnica colaboran entre Frontend, API y Backend sin reemplazar el Modelo de Permisos ni las reglas del dominio.
+Definir el contrato y flujo de autenticación entre el Frontend y la API, manteniendo separados identidad, sesión, autorización y reglas del dominio.
 
 ---
 
@@ -110,15 +111,15 @@ Diccionario de Datos aprobado.
 
 # Próximos Hitos
 
-* Arquitectura de Seguridad
 * Autenticación
+* ADR de proveedor de identidad y sesión
 * Persistencia
 
 ---
 
 # Última Decisión Importante
 
-SRS-009 define trece Casos de Uso y su cobertura sobre los Flujos de Negocio y Requerimientos Funcionales aprobados.
+La Arquitectura de Seguridad separa autenticación, autorización, reglas del dominio, Historial y observabilidad, y exige autorización contextual en el Backend.
 
 ---
 
