@@ -4,9 +4,9 @@
 
 **Proyecto:** Arauco Project Hub
 
-**Fase actual:** Fase 2 - Architecture (En progreso)
+**Fase actual:** Fase 3 - Standards (En progreso)
 
-**Estado general:** Filosofía del Producto, SRS-001 a SRS-010, arquitecturas principales y decisiones tecnológicas de persistencia y observabilidad aprobados. Revisión de cierre de Architecture.
+**Estado general:** Fase 2 - Architecture cerrada. Filosofía del Producto, SRS-001 a SRS-010, arquitecturas principales, decisiones tecnológicas y EST-001 aprobados. Inicio de Standards.
 
 ---
 
@@ -69,27 +69,27 @@
 
 ## Standards
 
-Pendientes.
+* ✅ EST-001 - Estándar Tecnológico
 
 ---
 
 # Documento Actual
 
-ADR-007 - Plataforma y Estándar de Observabilidad (Approved)
+EST-001 - Estándar Tecnológico (Approved)
 
 Objetivo:
 
-Utilizar Azure Monitor Application Insights, OpenTelemetry y W3C Trace Context, con una estrategia explícita y aislada para la instrumentación del navegador.
+Consolidar las tecnologías y versiones mayores aprobadas, sus condiciones de uso y sus límites.
 
 ---
 
 # Siguiente Objetivo
 
-EST-001 - Estándar Tecnológico
+EST-002 - Estándar Azure
 
 Objetivo:
 
-Consolidar las tecnologías y versiones aprobadas, sus condiciones de uso y sus límites, después de verificar el cierre de la Fase 2 - Architecture.
+Definir las condiciones comunes para utilizar los servicios Azure ya aprobados, sin seleccionar todavía una plataforma de despliegue ni incorporar servicios no respaldados por una decisión arquitectónica.
 
 ---
 
@@ -122,12 +122,13 @@ Diccionario de Datos aprobado.
 * Arquitectura de Observabilidad
 * ADR-007 - Plataforma y Estándar de Observabilidad
 * EST-001 - Estándar Tecnológico
+* EST-002 - Estándar Azure
 
 ---
 
 # Última Decisión Importante
 
-ADR-007 adopta Azure Monitor Application Insights, OpenTelemetry y W3C Trace Context, y mantiene una instrumentación específica y aislada para el navegador.
+EST-001 consolida la base tecnológica aprobada, gobierna sus versiones mayores y prohíbe resolver definiciones Pendientes mediante supuestos de implementación.
 
 ---
 

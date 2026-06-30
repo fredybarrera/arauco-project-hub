@@ -4,6 +4,27 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ---
 
+## 2026-06-30
+
+### EST-001 - Estándar Tecnológico
+
+**Documento aprobado:** EST-001 - Estándar Tecnológico
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se consolidaron las tecnologías y versiones mayores aprobadas para Frontend, Backend, persistencia, identidad y observabilidad.
+* Se estableció que las versiones menores y de corrección deben actualizarse de manera controlada y permanecer soportadas.
+* Se documentaron las condiciones y límites de Nuxt 4, Vue 3, .NET 10, ASP.NET Core 10 y Entity Framework Core 10.
+* Se mantuvieron el Lenguaje Ubicuo, la Iniciativa y el Modelo de Dominio independientes de frameworks y servicios.
+* Se gobernó la incorporación de dependencias y se exigió revisar los ADR ante cambios mayores.
+* Se conservaron explícitas las tecnologías y definiciones todavía no aprobadas.
+* Se cerró la Fase 2 - Architecture y se inició la Fase 3 - Standards.
+* Se definió EST-002 - Estándar Azure como el siguiente documento del Engineering Playbook.
+
+---
+
 ## 2026-06-28
 
 ### ADR-007 - Plataforma y Estándar de Observabilidad
