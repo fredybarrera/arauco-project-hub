@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-30
 
+### EST-002 - Estándar Azure
+
+**Documento aprobado:** EST-002 - Estándar Azure
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se definieron las condiciones comunes para utilizar los servicios Azure aprobados.
+* Se limitó el estándar a Azure SQL Database, Azure Monitor Application Insights, Log Analytics y las capacidades de identidad ya respaldadas.
+* Se exigió separar recursos, configuración, acceso y señales por Ambiente.
+* Se establecieron menor privilegio, preferencia por identidad administrada y protección de secretos.
+* Se documentaron condiciones para persistencia, observabilidad, protección de información, continuidad y costos.
+* Se prohibió incorporar servicios Azure o topologías no respaldados por una decisión aprobada.
+* Se mantuvieron explícitas las validaciones corporativas y operacionales necesarias para la implementación.
+* Se definió EST-003 - Convención de Repositorios como el siguiente documento del Engineering Playbook.
+
+---
+
 ### EST-001 - Estándar Tecnológico
 
 **Documento aprobado:** EST-001 - Estándar Tecnológico

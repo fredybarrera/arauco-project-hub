@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 3 - Standards (En progreso)
 
-**Estado general:** Fase 2 - Architecture cerrada. Filosofía del Producto, SRS-001 a SRS-010, arquitecturas principales, decisiones tecnológicas y EST-001 aprobados. Inicio de Standards.
+**Estado general:** Fase 2 - Architecture cerrada. Filosofía del Producto, SRS-001 a SRS-010, arquitecturas principales, decisiones tecnológicas, EST-001 y EST-002 aprobados. Standards en progreso.
 
 ---
 
@@ -70,26 +70,27 @@
 ## Standards
 
 * ✅ EST-001 - Estándar Tecnológico
+* ✅ EST-002 - Estándar Azure
 
 ---
 
 # Documento Actual
 
-EST-001 - Estándar Tecnológico (Approved)
+EST-002 - Estándar Azure (Approved)
 
 Objetivo:
 
-Consolidar las tecnologías y versiones mayores aprobadas, sus condiciones de uso y sus límites.
+Definir las condiciones comunes para utilizar los servicios Azure ya aprobados, sin seleccionar una plataforma de despliegue ni incorporar servicios no respaldados por una decisión arquitectónica.
 
 ---
 
 # Siguiente Objetivo
 
-EST-002 - Estándar Azure
+EST-003 - Convención de Repositorios
 
 Objetivo:
 
-Definir las condiciones comunes para utilizar los servicios Azure ya aprobados, sin seleccionar todavía una plataforma de despliegue ni incorporar servicios no respaldados por una decisión arquitectónica.
+Definir las convenciones aplicables al monorepo aprobado, sin seleccionar herramientas de gestión no justificadas.
 
 ---
 
@@ -123,12 +124,13 @@ Diccionario de Datos aprobado.
 * ADR-007 - Plataforma y Estándar de Observabilidad
 * EST-001 - Estándar Tecnológico
 * EST-002 - Estándar Azure
+* EST-003 - Convención de Repositorios
 
 ---
 
 # Última Decisión Importante
 
-EST-001 consolida la base tecnológica aprobada, gobierna sus versiones mayores y prohíbe resolver definiciones Pendientes mediante supuestos de implementación.
+EST-002 establece las condiciones comunes para utilizar servicios Azure aprobados, con separación por Ambiente, menor privilegio y protección de secretos e información.
 
 ---
 
