@@ -62,7 +62,7 @@
 * ✅ Modelo de Dominio Arquitectónico
 * ✅ Arquitectura del Backend
 * ✅ Arquitectura del Frontend
-* ✅ Diseño de la API
+* ✅ Diseño de la API (versión 1.1)
 * ✅ Arquitectura de Seguridad
 * ✅ Autenticación
 * ✅ Arquitectura de Persistencia
@@ -89,21 +89,21 @@
 
 # Documento Actual
 
-Diccionario de Datos (versión 1.1 Approved)
+Diseño de la API (versión 1.1 Approved)
 
 Objetivo alcanzado:
 
-Se definieron `identificador_tenant`, `object_identifier`, su presencia conjunta y la clave única compuesta con la Iniciativa.
+Se aprobó el contrato de `GET /api/iniciativas/{iniciativaId}` para CU-002.
 
 ---
 
 # Siguiente Objetivo
 
-Preparar la revisión 1.1 del Diseño de la API.
+Preparar la revisión 1.1 de Sprint 1 - Implementación de CU-002.
 
 Objetivo:
 
-Definir el contrato mínimo de CU-002 - Consultar una Iniciativa conforme a Sprint 1.
+Cerrar la estrategia de datos controlados y confirmar que las condiciones documentales para implementar CU-002 están resueltas.
 
 ---
 
@@ -148,12 +148,13 @@ Diccionario de Datos versión 1.1 aprobado.
 * SRS-010 - Modelo Relacional, versión 1.1
 * DER - Diagrama de Entidad-Relación, versión 1.1
 * Diccionario de Datos, versión 1.1
+* Diseño de la API, versión 1.1
 
 ---
 
 # Última Decisión Importante
 
-Diccionario de Datos versión 1.1 define la representación lógica de la identidad corporativa de Participante y su clave única compuesta.
+Diseño de la API versión 1.1 aprueba `GET /api/iniciativas/{iniciativaId}` y protege la existencia de la Iniciativa mediante una respuesta pública uniforme.
 
 ---
 

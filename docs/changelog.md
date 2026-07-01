@@ -6,6 +6,27 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-30
 
+### Diseño de la API, versión 1.1
+
+**Documento aprobado:** Diseño de la API
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se aprobó `GET /api/iniciativas/{iniciativaId}` para CU-002.
+* Se definió una respuesta mínima con Iniciativa, Negocio y Estado de Iniciativa.
+* Se exigió autenticación mediante el access token aprobado en ADR-009.
+* Se mantuvo la autorización contextual mediante Participante y ADR-010.
+* Se definieron respuestas `200`, `401`, `404` y `500`.
+* Se adoptó la misma respuesta pública `404` para inexistencia y falta de participación.
+* Se definió un error público acotado con identificador de correlación.
+* Se prohibió exponer identidad corporativa, tokens, excepciones y trazas.
+* La versión 1.1 reemplazó la versión 1.0 como fuente oficial.
+* Se definió la revisión 1.1 de Sprint 1 como siguiente documento.
+
+---
+
 ### Diccionario de Datos, versión 1.1
 
 **Documento aprobado:** Diccionario de Datos

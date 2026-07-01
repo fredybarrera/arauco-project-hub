@@ -4,11 +4,13 @@
 
 # Diseño de la API
 
-**Versión:** 1.0
+**Versión:** 1.1
 
 **Estado:** Approved
 
-**Fecha:** 2026-06-28
+**Fecha:** 2026-06-30
+
+**Revisión anterior:** 1.0 Approved
 
 ---
 
@@ -35,7 +37,7 @@ Este documento establece:
 
 Quedan fuera del alcance:
 
-* El catálogo definitivo de endpoints.
+* El catálogo de endpoints distinto de la operación aprobada para CU-002.
 * Autenticación y autorización.
 * Permisos por actor o Rol de Participación.
 * El proveedor de identidad.
@@ -335,16 +337,16 @@ Son cambios potencialmente incompatibles:
 
 # 15. Seguridad
 
-Hasta aprobar la arquitectura de seguridad, la API debe:
+Conforme a la Arquitectura de Seguridad y ADR-009, la API debe:
 
 * No confiar en validaciones del Frontend.
 * No utilizar ocultamiento de rutas como autorización.
 * Validar datos en el límite.
 * Evitar exponer información interna o sensible.
-* Preparar contratos que permitan identificar al actor responsable.
+* Obtener la identidad corporativa exclusivamente desde un token validado.
 * Mantener autenticación, autorización y reglas del dominio como responsabilidades distintas.
 
-No se definen permisos, credenciales, sesiones ni proveedor de identidad en este documento.
+La relación entre identidad corporativa y Participante se resuelve conforme a ADR-010.
 
 ---
 
@@ -455,15 +457,101 @@ Este documento deriva principalmente de:
 * Modelo de Dominio Arquitectónico.
 * Arquitectura del Backend.
 * Arquitectura del Frontend.
+* SRS-005: RF-002 y RF-003.
+* SRS-007: MP-001 y MP-004.
+* SRS-009: CU-002.
+* ADR-009 - Autenticación y Sesión para Frontend Estático.
+* ADR-010 - Relación entre Identidad Corporativa y Participante.
+* Sprint 0 - Primera Capacidad Trazable.
+* Sprint 1 - Implementación de CU-002.
 
 ---
 
-# 22. Pendientes
+# 22. Contrato de CU-002 - Consultar una Iniciativa
 
-* Aprobar los requerimientos funcionales que originan las operaciones.
-* Definir el catálogo de endpoints.
-* Definir los contratos de cada capacidad.
-* Definir el formato de errores y su correspondencia con HTTP.
+## 22.1 Propósito
+
+Permitir que un Participante autenticado consulte la información mínima de una Iniciativa en la que participa.
+
+## 22.2 Solicitud
+
+**Método:** `GET`
+
+**Ruta:** `/api/iniciativas/{iniciativaId}`
+
+`iniciativaId` es un identificador opaco. La solicitud no incluye identidad del actor en parámetros, encabezados propios ni cuerpo.
+
+La operación requiere un access token válido conforme a ADR-009.
+
+## 22.3 Respuesta Exitosa
+
+**Estado HTTP:** `200 OK`
+
+```json
+{
+  "iniciativaId": "...",
+  "negocio": {
+    "negocioId": "...",
+    "nombre": "..."
+  },
+  "nombre": "...",
+  "estadoIniciativa": "Idea"
+}
+```
+
+El contrato:
+
+* Presenta únicamente Identificador, Negocio, nombre y Estado de Iniciativa.
+* Utiliza identificadores opacos.
+* No expone Participantes ni datos de identidad corporativa.
+* No expone entidades del dominio ni nombres físicos de persistencia.
+
+## 22.4 Resultados
+
+| Condición | Estado HTTP | Identificador público |
+| --- | --- | --- |
+| Consulta permitida | `200 OK` | No aplica. |
+| Token ausente, inválido o expirado | `401 Unauthorized` | `autenticacion_requerida` |
+| Iniciativa inexistente | `404 Not Found` | `iniciativa_no_encontrada` |
+| Actor sin participación en la Iniciativa | `404 Not Found` | `iniciativa_no_encontrada` |
+| Fallo técnico inesperado | `500 Internal Server Error` | `fallo_tecnico` |
+
+El acceso no permitido utiliza la misma respuesta pública que la ausencia de la Iniciativa para no revelar su existencia. El Backend conserva resultados internos distintos para observabilidad y pruebas.
+
+## 22.5 Error Público Acotado
+
+Para CU-002, cuando exista cuerpo de error, debe incluir:
+
+```json
+{
+  "codigo": "iniciativa_no_encontrada",
+  "mensaje": "No fue posible encontrar la Iniciativa.",
+  "correlacionId": "..."
+}
+```
+
+`correlacionId` deriva del contexto W3C Trace Context aprobado en ADR-007. No autoriza acceso ni expone identificadores del dominio.
+
+Este formato queda acotado a CU-002. Adoptarlo como convención transversal requerirá una decisión específica.
+
+## 22.6 Pruebas de Contrato
+
+Se debe verificar:
+
+* La forma exacta de la respuesta `200`.
+* La ausencia de datos adicionales de la Iniciativa.
+* `401` para autenticación ausente o inválida.
+* La misma respuesta pública `404` para inexistencia y falta de participación.
+* La presencia de un identificador de correlación en errores con cuerpo.
+* La ausencia de tenant, object identifier, tokens, excepciones y trazas.
+
+---
+
+# 23. Pendientes
+
+* Definir el catálogo de endpoints posterior a CU-002.
+* Definir los contratos de capacidades posteriores.
+* Definir el formato transversal de errores y su correspondencia con HTTP.
 * Definir el mecanismo de versionado.
 * Definir la estrategia de paginación.
 * Definir concurrencia e idempotencia.
@@ -475,8 +563,8 @@ Cada decisión arquitectónica importante deberá documentarse mediante ADR.
 
 ---
 
-# 23. Estado del Documento
+# 24. Estado del Documento
 
 **Estado actual:** Approved
 
-Este documento constituye la fuente oficial para el diseño general de la API de Arauco Project Hub.
+Esta revisión constituye la fuente oficial para el diseño de la API y reemplaza la versión 1.0.
