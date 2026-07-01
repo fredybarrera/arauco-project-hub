@@ -6,6 +6,27 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-30
 
+### ADR-008 - Plataforma y Estrategia de Despliegue
+
+**Documento aprobado:** ADR-008 - Plataforma y Estrategia de Despliegue
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se seleccionó Azure Static Web Apps para desplegar el Frontend estático con Nuxt 4.
+* Se seleccionó Azure Container Apps para desplegar la API y el Backend con ASP.NET Core 10.
+* Se seleccionó Azure Container Registry como repositorio privado de imágenes.
+* Se descartó explícitamente Azure App Service.
+* Se definieron imágenes inmutables, revisiones controladas y reversión mediante tráfico.
+* Se seleccionaron Azure Key Vault, identidades administradas, federación de GitHub Actions y Bicep.
+* Se definió un Container Apps Job manual para ejecutar migraciones.
+* Se documentaron las restricciones del Backend enlazado bajo `/api`.
+* Se exigió revisar ADR-005 antes de implementar autenticación y sesión.
+* Se definió ADR-009 - Autenticación y Sesión para Frontend Estático como el siguiente documento.
+
+---
+
 ### EST-005 - CI/CD
 
 **Documento aprobado:** EST-005 - CI/CD

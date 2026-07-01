@@ -42,6 +42,7 @@
 * ✅ ADR-005 - Proveedor de Identidad y Estrategia de Sesión
 * ✅ ADR-006 - Tecnología y Estrategia de Persistencia
 * ✅ ADR-007 - Plataforma y Estándar de Observabilidad
+* ✅ ADR-008 - Plataforma y Estrategia de Despliegue
 
 ---
 
@@ -79,21 +80,21 @@
 
 # Documento Actual
 
-EST-005 - CI/CD (Approved)
+ADR-008 - Plataforma y Estrategia de Despliegue (Approved)
 
 Objetivo:
 
-Definir las validaciones y el flujo de integración y entrega del monorepo sin seleccionar una plataforma de despliegue no aprobada.
+Seleccionar la plataforma de ejecución para Frontend y Backend, la forma de empaquetado, la topología, la configuración, la identidad, la estrategia de Despliegue y el mecanismo de migraciones.
 
 ---
 
 # Siguiente Objetivo
 
-ADR-008 - Plataforma y Estrategia de Despliegue
+ADR-009 - Autenticación y Sesión para Frontend Estático
 
 Objetivo:
 
-Seleccionar la plataforma de ejecución para Frontend y Backend, la forma de empaquetado, la topología, la configuración, la identidad, la estrategia de Despliegue y el mecanismo de migraciones.
+Revisar y superseder la estrategia de sesión mediada por servidor Nuxt definida en ADR-005, utilizando una alternativa compatible con Azure Static Web Apps y el Backend enlazado en Azure Container Apps.
 
 ---
 
@@ -131,12 +132,13 @@ Diccionario de Datos aprobado.
 * EST-004 - Convención de Nombres
 * EST-005 - CI/CD
 * ADR-008 - Plataforma y Estrategia de Despliegue
+* ADR-009 - Autenticación y Sesión para Frontend Estático
 
 ---
 
 # Última Decisión Importante
 
-EST-005 adopta GitHub Actions para CI/CD, exige artefactos inmutables y promoción controlada entre Ambientes, y requiere un ADR antes de implementar el Despliegue.
+ADR-008 adopta Azure Static Web Apps para el Frontend, Azure Container Apps para el Backend y Azure Container Registry para las imágenes, sin utilizar Azure App Service.
 
 ---
 
