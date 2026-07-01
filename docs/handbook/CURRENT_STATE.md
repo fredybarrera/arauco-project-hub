@@ -4,9 +4,9 @@
 
 **Proyecto:** Arauco Project Hub
 
-**Fase actual:** Fase 3 - Standards (Completada)
+**Fase actual:** Fase 4 - Implementación
 
-**Estado general:** Fase 2 - Architecture y Fase 3 - Standards completadas. Filosofía del Producto, SRS-001 a SRS-010, arquitecturas principales, decisiones tecnológicas y EST-001 a EST-005 aprobados. Preparación de la primera implementación trazable.
+**Estado general:** Fase 2 - Architecture y Fase 3 - Standards completadas. Sprint 1 versión 1.1 aprobado. Inicio de la implementación trazable de CU-002.
 
 ---
 
@@ -83,27 +83,27 @@
 ## Roadmap
 
 * ✅ Sprint 0 - Primera Capacidad Trazable
-* ✅ Sprint 1 - Implementación de CU-002
+* ✅ Sprint 1 - Implementación de CU-002 (versión 1.1)
 
 ---
 
 # Documento Actual
 
-Diseño de la API (versión 1.1 Approved)
+Sprint 1 - Implementación de CU-002 (versión 1.1 Approved)
 
 Objetivo alcanzado:
 
-Se aprobó el contrato de `GET /api/iniciativas/{iniciativaId}` para CU-002.
+Se aprobaron la estrategia de datos controlados y las condiciones documentales para implementar CU-002.
 
 ---
 
 # Siguiente Objetivo
 
-Preparar la revisión 1.1 de Sprint 1 - Implementación de CU-002.
+Iniciar la base del monorepo.
 
 Objetivo:
 
-Cerrar la estrategia de datos controlados y confirmar que las condiciones documentales para implementar CU-002 están resueltas.
+Preparar las estructuras mínimas de Frontend y Backend con construcción, análisis y pruebas verificables.
 
 ---
 
@@ -149,12 +149,13 @@ Diccionario de Datos versión 1.1 aprobado.
 * DER - Diagrama de Entidad-Relación, versión 1.1
 * Diccionario de Datos, versión 1.1
 * Diseño de la API, versión 1.1
+* Sprint 1 - Implementación de CU-002, versión 1.1
 
 ---
 
 # Última Decisión Importante
 
-Diseño de la API versión 1.1 aprueba `GET /api/iniciativas/{iniciativaId}` y protege la existencia de la Iniciativa mediante una respuesta pública uniforme.
+Sprint 1 versión 1.1 aprueba datos deterministas y aislados para Desarrollo y pruebas, sin datos de prueba ni aprovisionamiento automático en PRD.
 
 ---
 

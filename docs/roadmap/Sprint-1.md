@@ -4,11 +4,13 @@
 
 # Sprint 1 - Implementación de CU-002
 
-**Versión:** 1.0
+**Versión:** 1.1
 
 **Estado:** Approved
 
 **Fecha:** 2026-06-30
+
+**Revisión anterior:** 1.0 Approved
 
 ---
 
@@ -36,17 +38,12 @@ Antes de implementar la capacidad se debe resolver:
 
 ## 3.1 Relación entre identidad y Participante
 
-ADR-009 identifica al actor mediante tenant y object identifier.
+Esta condición fue resuelta por:
 
-El modelo aprobado representa en Participante una Identificación de la persona o equipo. Todavía debe confirmarse cómo se relaciona con la identidad corporativa estable.
-
-No se debe:
-
-* Utilizar correo o nombre como clave de autorización.
-* Asumir que `identificacion_persona_equipo` equivale a object identifier.
-* Modificar el Modelo Relacional o el Diccionario de Datos sin una revisión controlada.
-
-Si la relación requiere nuevos datos o restricciones, se debe revisar primero el documento de mayor prioridad correspondiente.
+* ADR-010 - Relación entre Identidad Corporativa y Participante.
+* SRS-010 - Modelo Relacional, versión 1.1.
+* DER, versión 1.1.
+* Diccionario de Datos, versión 1.1.
 
 ## 3.2 Datos controlados
 
@@ -56,17 +53,21 @@ Como registrar una Iniciativa permanece fuera del alcance:
 * No deben incorporarse como comportamiento de PRD.
 * Deben incluir un Negocio, una Iniciativa y Participantes suficientes para verificar acceso permitido y no permitido.
 
+La estrategia propuesta es:
+
+* Las pruebas de integración crean y eliminan sus propios datos en una base aislada.
+* Los datos utilizan identificadores deterministas únicamente dentro de las pruebas.
+* Las vinculaciones utilizan tenant y object identifier ficticios, nunca identidades corporativas reales.
+* Desarrollo puede habilitar datos locales mediante una acción explícita y separada de las migraciones.
+* Las migraciones de PRD contienen únicamente cambios de estructura.
+* La aplicación no crea Negocios, Iniciativas ni Participantes automáticamente al iniciar.
+* QAS y PRD no reciben datos de prueba desde el repositorio.
+
 ## 3.3 Contrato de la API
 
-Antes de desarrollar Frontend y API se debe aprobar para esta capacidad:
+Esta condición fue resuelta por Diseño de la API, versión 1.1.
 
-* Ruta y método.
-* Identificador opaco de la Iniciativa.
-* Representación de salida.
-* Correspondencia entre resultados conceptuales y protocolo.
-* Forma del identificador de correlación.
-
-Una convención transversal nueva deberá proponerse mediante ADR.
+La operación aprobada es `GET /api/iniciativas/{iniciativaId}`.
 
 ---
 
@@ -205,16 +206,14 @@ Sprint 1 deriva de:
 
 Antes de iniciar la implementación se debe:
 
-* Aprobar mediante ADR la relación entre identidad corporativa y Participante.
-* Aprobar el contrato mínimo de CU-002 dentro del alcance de Sprint 1.
-* Confirmar la estrategia de datos controlados.
+* Aprobar esta revisión con la estrategia de datos controlados.
 * Validar la ejecución con el Technical Lead y el equipo de Desarrollo.
 
 ---
 
 # 10. Siguiente Paso
 
-Preparar ADR-010 - Relación entre Identidad Corporativa y Participante.
+Después de aprobar esta revisión, iniciar la base del monorepo definida en la sección 4.1.
 
 ---
 
@@ -222,4 +221,4 @@ Preparar ADR-010 - Relación entre Identidad Corporativa y Participante.
 
 **Estado actual:** Approved
 
-Este documento constituye la fuente oficial para la secuencia de implementación de CU-002.
+Esta revisión constituye la fuente oficial para la implementación de CU-002 y reemplaza la versión 1.0.

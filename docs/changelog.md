@@ -6,6 +6,26 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-30
 
+### Sprint 1 - Implementación de CU-002, versión 1.1
+
+**Documento aprobado:** Sprint 1 - Implementación de CU-002
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se registraron como resueltas la relación de identidad y el contrato de la API.
+* Se aprobó que las pruebas de integración administren datos propios en una base aislada.
+* Se limitaron los identificadores deterministas al contexto de pruebas.
+* Se exigieron identidades ficticias y se prohibieron identidades corporativas reales en datos de prueba.
+* Se separaron los datos locales de Desarrollo de las migraciones.
+* Se prohibió incorporar datos de prueba o aprovisionamiento automático en QAS y PRD.
+* La versión 1.1 reemplazó la versión 1.0 como fuente oficial.
+* Se inició la Fase 4 - Implementación.
+* Se definió la base del monorepo como siguiente paso.
+
+---
+
 ### Diseño de la API, versión 1.1
 
 **Documento aprobado:** Diseño de la API
