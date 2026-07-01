@@ -6,6 +6,26 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-07-01
 
+### API y Autenticación de CU-002
+
+**Cambio aprobado:** API y Autenticación de CU-002
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se expuso `GET /api/iniciativas/{iniciativaId}` conforme al contrato aprobado.
+* Se configuró autenticación Bearer con Microsoft Entra ID y autorización requerida por defecto.
+* Se obtuvo la identidad corporativa exclusivamente desde las claims validadas `tid` y `oid`.
+* Se mantuvo `/health` como la única ruta anónima explícita.
+* Se implementaron las respuestas `200`, `401` y `404` de CU-002.
+* Se utilizó la misma respuesta pública `404` para Iniciativa inexistente y acción no permitida.
+* Se incorporó el identificador de correlación en el error público acotado.
+* Se agregaron pruebas HTTP del contrato y del límite de autenticación.
+* Se definió el Frontend de CU-002 como siguiente paso.
+
+---
+
 ### Backend de CU-002
 
 **Cambio aprobado:** Backend de CU-002

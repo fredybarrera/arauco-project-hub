@@ -91,21 +91,21 @@
 
 # Documento Actual
 
-Backend de CU-002 (Approved)
+API y Autenticación de CU-002 (Approved)
 
 Objetivo:
 
-Coordinación, consulta autorizada y resultados internos de CU-002 aprobados.
+Endpoint protegido, validación de identidad corporativa y contrato HTTP de CU-002 aprobados.
 
 ---
 
 # Siguiente Objetivo
 
-Implementar la API y Autenticación de CU-002.
+Implementar el Frontend de CU-002.
 
 Objetivo:
 
-Exponer `GET /api/iniciativas/{iniciativaId}`, obtener la identidad corporativa desde un token validado y aplicar el contrato público aprobado.
+Integrar Microsoft Entra ID mediante MSAL, consultar `/api` y presentar Negocio, nombre y Estado de Iniciativa con sus estados de interfaz.
 
 ---
 
@@ -156,12 +156,13 @@ Diccionario de Datos versión 1.1 aprobado.
 * ADR-012 - Esquema Físico Mínimo para CU-002
 * Persistencia Mínima de CU-002
 * Backend de CU-002
+* API y Autenticación de CU-002
 
 ---
 
 # Última Decisión Importante
 
-El Backend de CU-002 coordina la consulta, verifica la participación dentro de la Iniciativa y distingue internamente información no encontrada de acción no permitida.
+La API de CU-002 exige un access token validado, obtiene tenant y object identifier del principal autenticado y expone únicamente el contrato HTTP aprobado.
 
 ---
 

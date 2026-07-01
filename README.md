@@ -17,6 +17,12 @@ dotnet build backend/Arauco.ProjectHub.slnx
 dotnet test backend/Arauco.ProjectHub.slnx --no-build
 ```
 
+Para ejecutar la API se requiere configuración externa por Ambiente:
+
+* `ConnectionStrings__AraucoProjectHub`
+* `MicrosoftEntra__Authority`
+* `MicrosoftEntra__Audience`
+
 Frontend:
 
 ```powershell
