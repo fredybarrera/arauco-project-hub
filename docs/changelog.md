@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-07-01
 
+### Backend de CU-002
+
+**Cambio aprobado:** Backend de CU-002
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se implementó la coordinación de la capacidad Consultar una Iniciativa.
+* Se definió un contrato interno de persistencia orientado a CU-002.
+* Se verificó la participación mediante tenant y object identifier dentro de la Iniciativa solicitada.
+* Se agregó una proyección sin seguimiento que limita la salida a Identificador, Negocio, nombre y Estado de Iniciativa.
+* Se distinguieron internamente los resultados de Iniciativa encontrada, inexistente y acción no permitida.
+* Se evitó exponer información de una Iniciativa cuando la participación no está verificada.
+* Se agregaron pruebas unitarias de los tres resultados de la capacidad.
+* Se definió la API y Autenticación de CU-002 como siguiente paso.
+
+---
+
 ### Persistencia Mínima de CU-002
 
 **Cambio aprobado:** Persistencia Mínima de CU-002

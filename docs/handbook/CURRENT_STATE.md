@@ -91,21 +91,21 @@
 
 # Documento Actual
 
-Persistencia Mínima de CU-002 (Approved)
+Backend de CU-002 (Approved)
 
 Objetivo:
 
-Contexto de Entity Framework Core, migración inicial y pruebas del esquema físico aprobados.
+Coordinación, consulta autorizada y resultados internos de CU-002 aprobados.
 
 ---
 
 # Siguiente Objetivo
 
-Implementar el Backend de CU-002.
+Implementar la API y Autenticación de CU-002.
 
 Objetivo:
 
-Definir la consulta en la coordinación de capacidades, proyectar únicamente la información aprobada y verificar la participación dentro de la Iniciativa.
+Exponer `GET /api/iniciativas/{iniciativaId}`, obtener la identidad corporativa desde un token validado y aplicar el contrato público aprobado.
 
 ---
 
@@ -155,12 +155,13 @@ Diccionario de Datos versión 1.1 aprobado.
 * ADR-011 - Estructura Física de Frontend y Backend
 * ADR-012 - Esquema Físico Mínimo para CU-002
 * Persistencia Mínima de CU-002
+* Backend de CU-002
 
 ---
 
 # Última Decisión Importante
 
-La Persistencia Mínima de CU-002 materializa ADR-012 mediante Entity Framework Core 10, una migración inicial sin datos semilla y pruebas del esquema físico.
+El Backend de CU-002 coordina la consulta, verifica la participación dentro de la Iniciativa y distingue internamente información no encontrada de acción no permitida.
 
 ---
 
