@@ -4,11 +4,13 @@
 
 # DER - Diagrama de Entidad-Relación
 
-**Versión:** 1.0
+**Versión:** 1.1
 
 **Estado:** Approved
 
-**Fecha:** 2026-06-28
+**Fecha:** 2026-06-30
+
+**Revisión anterior:** 1.0 Approved
 
 ---
 
@@ -115,6 +117,8 @@ erDiagram
         Identificacion identificacion_persona_equipo
         Nombre nombre
         RolParticipacion rol_participacion
+        Identificador identificador_tenant UK
+        Identificador object_identifier UK
     }
 
     COMPONENTE {
@@ -242,10 +246,15 @@ El DER aplica las siguientes condiciones aprobadas en SRS-010:
 * Un Despliegue identifica la Versión publicada y el Ambiente donde ocurre.
 * Una combinación de Iniciativa y Ambiente no se repite.
 * La Identificación de Versión no se repite dentro de una misma Iniciativa.
+* Identificador del tenant y object identifier de Participante están presentes juntos o ausentes juntos.
+* La combinación de Iniciativa, Identificador del tenant y object identifier no identifica más de un Participante.
+* La Identificación de la persona o equipo permanece separada de la identidad corporativa.
 * El Estado de Iniciativa y el Estado de Solicitud se mantienen independientes.
 * Los eventos del Historial no reemplazan el estado actual ni se modifican para sustituir lo ocurrido.
 
 Las condiciones que dependen del significado del dominio deben protegerse en el dominio, aunque la persistencia también aplique restricciones de integridad.
+
+La marca `UK` sobre Identificador del tenant y object identifier representa una única restricción compuesta junto con la Iniciativa; ninguno de estos datos es único de forma aislada.
 
 ---
 
@@ -253,11 +262,12 @@ Las condiciones que dependen del significado del dominio deben protegerse en el 
 
 | Elemento del DER | Fuente |
 | --- | --- |
-| Estructuras, atributos mínimos y relaciones | SRS-010, secciones 5 y 7. |
+| Estructuras, atributos mínimos y relaciones | SRS-010 versión 1.1, secciones 5 y 7. |
 | Cardinalidades | SRS-003, sección 6; SRS-010, secciones 5 y 7. |
-| Integridad | SRS-010, sección 8. |
+| Integridad | SRS-010 versión 1.1, sección 8. |
 | Iniciativa como Aggregate Root principal | SRS-003, ADR-001 y SRS-010. |
 | Contexto y trazabilidad | PHIL-001, SRS-004, ADR-001 y SRS-010. |
+| Identidad corporativa de Participante | ADR-010 y SRS-010 versión 1.1. |
 
 SRS-010 permanece como fuente oficial. Si existe una diferencia entre este DER y SRS-010, prevalece SRS-010.
 
@@ -273,7 +283,7 @@ SRS-010 permanece como fuente oficial. Si existe una diferencia entre este DER y
 * Aclarar qué Rol de Participación representa al responsable TI.
 * Validar la relación entre Solicitudes y Versiones antes de incorporarla al DER.
 * Resolver el Pendiente respecto del concepto Solución.
-* Elaborar el Diccionario de Datos después de aprobar este documento.
+* Actualizar el Diccionario de Datos después de aprobar esta revisión.
 * Documentar mediante ADR la selección de la tecnología y la estrategia de persistencia cuando corresponda.
 
 ---
@@ -282,4 +292,4 @@ SRS-010 permanece como fuente oficial. Si existe una diferencia entre este DER y
 
 **Estado actual:** Approved
 
-Este documento constituye la representación visual oficial del Modelo Relacional de Arauco Project Hub.
+Esta revisión constituye la representación visual oficial del Modelo Relacional y reemplaza la versión 1.0.

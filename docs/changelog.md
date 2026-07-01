@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-30
 
+### DER - Diagrama de Entidad-Relación, versión 1.1
+
+**Documento aprobado:** DER - Diagrama de Entidad-Relación
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se incorporaron `identificador_tenant` y `object_identifier` en Participante.
+* Se representó su presencia conjunta o ausencia conjunta.
+* Se representó la unicidad compuesta con la Iniciativa.
+* Se aclaró que ninguno de los dos datos es único de forma aislada.
+* Se mantuvo separada `identificacion_persona_equipo`.
+* Se agregó trazabilidad hacia ADR-010 y SRS-010 versión 1.1.
+* La versión 1.1 reemplazó la versión 1.0 como representación visual oficial.
+* Se definió la revisión 1.1 del Diccionario de Datos como siguiente documento.
+
+---
+
 ### SRS-010 - Modelo Relacional, versión 1.1
 
 **Documento aprobado:** SRS-010 - Modelo Relacional

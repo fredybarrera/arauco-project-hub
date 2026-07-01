@@ -50,7 +50,7 @@
 
 ## Modelo de Datos
 
-* ✅ DER - Diagrama de Entidad-Relación
+* ✅ DER - Diagrama de Entidad-Relación (versión 1.1)
 * ✅ Diccionario de Datos
 
 ---
@@ -89,21 +89,21 @@
 
 # Documento Actual
 
-SRS-010 - Modelo Relacional (versión 1.1 Approved)
+DER - Diagrama de Entidad-Relación (versión 1.1 Approved)
 
 Objetivo alcanzado:
 
-Se incorporaron Identificador del tenant y object identifier como datos técnicos opcionales y conjuntos de Participante, con unicidad dentro de una Iniciativa.
+Se representaron Identificador del tenant y object identifier, su presencia conjunta y su unicidad compuesta dentro de una Iniciativa.
 
 ---
 
 # Siguiente Objetivo
 
-Preparar la revisión 1.1 del DER.
+Preparar la revisión 1.1 del Diccionario de Datos.
 
 Objetivo:
 
-Representar los datos y restricciones de identidad corporativa aprobados en SRS-010 versión 1.1.
+Definir nombres físicos, obligatoriedad y restricciones para los datos de identidad corporativa de Participante.
 
 ---
 
@@ -123,7 +123,7 @@ Modelo Operacional aprobado.
 
 Modelo Relacional versión 1.1 aprobado.
 
-DER aprobado.
+DER versión 1.1 aprobado.
 
 Diccionario de Datos aprobado.
 
@@ -146,12 +146,13 @@ Diccionario de Datos aprobado.
 * Sprint 1 - Implementación de CU-002
 * ADR-010 - Relación entre Identidad Corporativa y Participante
 * SRS-010 - Modelo Relacional, versión 1.1
+* DER - Diagrama de Entidad-Relación, versión 1.1
 
 ---
 
 # Última Decisión Importante
 
-SRS-010 versión 1.1 incorpora la identidad corporativa como datos técnicos opcionales de Participante y conserva separada la Identificación de la persona o equipo.
+DER versión 1.1 representa la identidad corporativa de Participante mediante una restricción única compuesta dentro de la Iniciativa.
 
 ---
 
