@@ -51,7 +51,7 @@
 ## Modelo de Datos
 
 * ✅ DER - Diagrama de Entidad-Relación (versión 1.1)
-* ✅ Diccionario de Datos
+* ✅ Diccionario de Datos (versión 1.1)
 
 ---
 
@@ -89,21 +89,21 @@
 
 # Documento Actual
 
-DER - Diagrama de Entidad-Relación (versión 1.1 Approved)
+Diccionario de Datos (versión 1.1 Approved)
 
 Objetivo alcanzado:
 
-Se representaron Identificador del tenant y object identifier, su presencia conjunta y su unicidad compuesta dentro de una Iniciativa.
+Se definieron `identificador_tenant`, `object_identifier`, su presencia conjunta y la clave única compuesta con la Iniciativa.
 
 ---
 
 # Siguiente Objetivo
 
-Preparar la revisión 1.1 del Diccionario de Datos.
+Preparar la revisión 1.1 del Diseño de la API.
 
 Objetivo:
 
-Definir nombres físicos, obligatoriedad y restricciones para los datos de identidad corporativa de Participante.
+Definir el contrato mínimo de CU-002 - Consultar una Iniciativa conforme a Sprint 1.
 
 ---
 
@@ -125,7 +125,7 @@ Modelo Relacional versión 1.1 aprobado.
 
 DER versión 1.1 aprobado.
 
-Diccionario de Datos aprobado.
+Diccionario de Datos versión 1.1 aprobado.
 
 ---
 
@@ -147,12 +147,13 @@ Diccionario de Datos aprobado.
 * ADR-010 - Relación entre Identidad Corporativa y Participante
 * SRS-010 - Modelo Relacional, versión 1.1
 * DER - Diagrama de Entidad-Relación, versión 1.1
+* Diccionario de Datos, versión 1.1
 
 ---
 
 # Última Decisión Importante
 
-DER versión 1.1 representa la identidad corporativa de Participante mediante una restricción única compuesta dentro de la Iniciativa.
+Diccionario de Datos versión 1.1 define la representación lógica de la identidad corporativa de Participante y su clave única compuesta.
 
 ---
 

@@ -6,6 +6,26 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-30
 
+### Diccionario de Datos, versión 1.1
+
+**Documento aprobado:** Diccionario de Datos
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se definieron `identificador_tenant` y `object_identifier` para Participante.
+* Ambos datos se declararon opcionales como par.
+* Se definió una clave única compuesta con `iniciativa_identificador`.
+* Se aclaró que ninguno de los identificadores es único de forma aislada.
+* Se mantuvo separado `identificacion_persona_equipo`.
+* Se agregaron las restricciones correspondientes a integridad referencial.
+* Se incorporó trazabilidad hacia ADR-010, SRS-010 versión 1.1 y DER versión 1.1.
+* La versión 1.1 reemplazó la versión 1.0 como fuente oficial.
+* Se definió la revisión 1.1 del Diseño de la API como siguiente documento.
+
+---
+
 ### DER - Diagrama de Entidad-Relación, versión 1.1
 
 **Documento aprobado:** DER - Diagrama de Entidad-Relación

@@ -4,11 +4,13 @@
 
 # Diccionario de Datos
 
-**Versión:** 1.0
+**Versión:** 1.1
 
 **Estado:** Approved
 
-**Fecha:** 2026-06-28
+**Fecha:** 2026-06-30
+
+**Revisión anterior:** 1.0 Approved
 
 ---
 
@@ -125,8 +127,16 @@ La obligatoriedad `Pendiente` indica que los documentos aprobados todavía no pe
 | Identificación de la persona o equipo | `identificacion_persona_equipo` | Texto corto | Sí | — | Identifica a la persona o equipo participante. |
 | Nombre | `nombre` | Texto corto | Sí | — | Nombre visible de la persona o equipo. |
 | Rol de Participación | `rol_participacion` | Valor gobernado | Sí | — | Responsabilidad del Participante dentro de la Iniciativa. |
+| Identificador del tenant | `identificador_tenant` | Identificador | No | UK | Identifica el tenant de la identidad corporativa asociada. |
+| Object identifier | `object_identifier` | Identificador | No | UK | Identifica la identidad corporativa dentro del tenant. |
 
-La integración con una fuente corporativa de personas permanece fuera del alcance.
+`identificador_tenant` y `object_identifier` son opcionales como par: ambos están presentes o ambos están ausentes.
+
+La clave única se compone de `iniciativa_identificador`, `identificador_tenant` y `object_identifier`. Ninguno de los dos datos de identidad es único de forma aislada.
+
+La Identificación de la persona o equipo mantiene un significado distinto de la identidad corporativa.
+
+La administración productiva de la vinculación con una identidad corporativa permanece fuera del alcance.
 
 ---
 
@@ -316,6 +326,9 @@ Los siguientes datos utilizan valores gobernados por el dominio y no constituyen
 * Una Versión y sus Despliegues permanecen dentro del contexto de una misma Iniciativa.
 * Una combinación de Iniciativa y Ambiente no se repite.
 * Una Identificación de Versión no se repite dentro de una misma Iniciativa.
+* `identificador_tenant` y `object_identifier` de Participante están presentes juntos o ausentes juntos.
+* La combinación de `iniciativa_identificador`, `identificador_tenant` y `object_identifier` no se repite.
+* `identificacion_persona_equipo` no sustituye los datos de identidad corporativa.
 * El cierre o cancelación de una Iniciativa no elimina sus Documentos, Conversaciones ni eventos del Historial.
 
 Las reglas que requieren comprender el significado del dominio deben permanecer protegidas por el dominio y no depender únicamente de la persistencia.
@@ -326,11 +339,12 @@ Las reglas que requieren comprender el significado del dominio deben permanecer 
 
 | Contenido | Fuente |
 | --- | --- |
-| Estructuras y datos mínimos | SRS-010, sección 5. |
-| Relaciones e integridad | SRS-010, secciones 7 y 8; DER, secciones 4 a 6. |
+| Estructuras y datos mínimos | SRS-010 versión 1.1, sección 5. |
+| Relaciones e integridad | SRS-010 versión 1.1, secciones 7 y 8; DER versión 1.1, secciones 4 a 6. |
 | Valores gobernados | SRS-003, sección 5; SRS-010, sección 6. |
 | Lenguaje utilizado | SRS-002. |
 | Iniciativa como Aggregate Root principal | SRS-003, ADR-001, SRS-010 y DER. |
+| Identidad corporativa de Participante | ADR-010, SRS-010 versión 1.1 y DER versión 1.1. |
 
 Si existe una diferencia entre este documento y una fuente aprobada de mayor prioridad, prevalece la fuente de mayor prioridad.
 
@@ -350,6 +364,7 @@ Si existe una diferencia entre este documento y una fuente aprobada de mayor pri
 * Definir la representación física de los valores gobernados.
 * Documentar mediante ADR la selección de la tecnología y la estrategia de persistencia.
 * Definir tipos físicos, longitudes, valores predeterminados e índices después de seleccionar la tecnología.
+* Definir una capacidad autorizada para administrar vinculaciones de identidad corporativa en PRD.
 
 ---
 
@@ -357,4 +372,4 @@ Si existe una diferencia entre este documento y una fuente aprobada de mayor pri
 
 **Estado actual:** Approved
 
-Este documento constituye la fuente oficial para la definición lógica de los datos persistidos por Arauco Project Hub.
+Esta revisión constituye la fuente oficial para la definición lógica de los datos persistidos y reemplaza la versión 1.0.
