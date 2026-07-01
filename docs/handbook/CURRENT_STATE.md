@@ -6,7 +6,7 @@
 
 **Fase actual:** Fase 3 - Standards (En progreso)
 
-**Estado general:** Fase 2 - Architecture cerrada. Filosofía del Producto, SRS-001 a SRS-010, arquitecturas principales, decisiones tecnológicas y EST-001 a EST-003 aprobados. Standards en progreso.
+**Estado general:** Fase 2 - Architecture cerrada. Filosofía del Producto, SRS-001 a SRS-010, arquitecturas principales, decisiones tecnológicas y EST-001 a EST-004 aprobados. Standards en progreso.
 
 ---
 
@@ -72,26 +72,27 @@
 * ✅ EST-001 - Estándar Tecnológico
 * ✅ EST-002 - Estándar Azure
 * ✅ EST-003 - Convención de Repositorios
+* ✅ EST-004 - Convención de Nombres
 
 ---
 
 # Documento Actual
 
-EST-003 - Convención de Repositorios (Approved)
+EST-004 - Convención de Nombres (Approved)
 
 Objetivo:
 
-Definir las convenciones aplicables al monorepo aprobado, manteniendo trazabilidad y límites explícitos sin seleccionar herramientas de gestión no justificadas.
+Definir nombres consistentes para documentación, código, API, persistencia y recursos técnicos sin crear sinónimos del Lenguaje Ubicuo.
 
 ---
 
 # Siguiente Objetivo
 
-EST-004 - Convención de Nombres
+EST-005 - CI/CD
 
 Objetivo:
 
-Definir nombres consistentes para documentación, código y recursos técnicos sin crear sinónimos del Lenguaje Ubicuo.
+Definir las validaciones y el flujo de integración y entrega del monorepo sin seleccionar una plataforma de despliegue no aprobada.
 
 ---
 
@@ -127,12 +128,13 @@ Diccionario de Datos aprobado.
 * EST-002 - Estándar Azure
 * EST-003 - Convención de Repositorios
 * EST-004 - Convención de Nombres
+* EST-005 - CI/CD
 
 ---
 
 # Última Decisión Importante
 
-EST-003 establece la organización del monorepo, los límites entre componentes, Conventional Commits y las reglas para dependencias, archivos versionados y validaciones.
+EST-004 establece nombres consistentes para documentación, código, API, persistencia y recursos técnicos, preservando el Lenguaje Ubicuo.
 
 ---
 

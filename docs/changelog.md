@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-30
 
+### EST-004 - Convención de Nombres
+
+**Documento aprobado:** EST-004 - Convención de Nombres
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se estableció el Lenguaje Ubicuo como fuente oficial de los nombres del dominio.
+* Se definieron transformaciones técnicas consistentes para documentación, C#, TypeScript, Vue, Nuxt, API y persistencia.
+* Se fijaron convenciones para títulos y nombres físicos de nuevos documentos.
+* Se definieron rutas en minúsculas, contratos JSON en camelCase y nombres físicos de persistencia en singular con guion bajo.
+* Se aprobaron representaciones técnicas para Ambientes y el identificador técnico `aph`.
+* Se propuso un patrón lógico para nombres de recursos Azure, sujeto a sus restricciones y políticas corporativas.
+* Se gobernaron nombres de ramas, abreviaturas y nombres prohibidos.
+* Se definió EST-005 - CI/CD como el siguiente documento del Engineering Playbook.
+
+---
+
 ### EST-003 - Convención de Repositorios
 
 **Documento aprobado:** EST-003 - Convención de Repositorios
