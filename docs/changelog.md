@@ -6,6 +6,22 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-07-01
 
+### ADR-012 - Esquema Físico Mínimo para CU-002
+
+**Documento aprobado:** ADR-012 - Esquema Físico Mínimo para CU-002
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se aprobaron las tablas, tipos, restricciones e índices mínimos para Negocio, Iniciativa y Participante.
+* Se definieron UUID versión 7, fechas UTC y `rowversion` para la concurrencia de Iniciativa.
+* Se estableció la presencia conjunta y unicidad contextual de la identidad corporativa.
+* Se excluyeron los datos iniciales y la ejecución automática de migraciones al iniciar la API.
+* Se definió la implementación de la persistencia mínima de CU-002 como siguiente paso.
+
+---
+
 ### Base del Monorepo
 
 **Cambio aprobado:** Base del Monorepo

@@ -46,6 +46,7 @@
 * ✅ ADR-009 - Autenticación y Sesión para Frontend Estático
 * ✅ ADR-010 - Relación entre Identidad Corporativa y Participante
 * ✅ ADR-011 - Estructura Física de Frontend y Backend
+* ✅ ADR-012 - Esquema Físico Mínimo para CU-002
 
 ---
 
@@ -90,13 +91,11 @@
 
 # Documento Actual
 
-ADR-011 - Estructura Física de Frontend y Backend (Approved)
+ADR-012 - Esquema Físico Mínimo para CU-002 (Approved)
 
-Objetivo alcanzado:
+Objetivo:
 
-Se aprobaron las unidades de compilación, carpetas y dependencias mínimas de Frontend y Backend.
-
-La base del monorepo fue materializada y validada conforme a ADR-011.
+Esquema físico mínimo aprobado para implementar la persistencia de CU-002.
 
 ---
 
@@ -106,7 +105,7 @@ Implementar la persistencia mínima de CU-002.
 
 Objetivo:
 
-Representar Negocio, Iniciativa y Participante conforme al modelo aprobado, incorporando la migración inicial y pruebas de integración con datos aislados.
+Crear el contexto de Entity Framework Core, la migración inicial y las pruebas de persistencia.
 
 ---
 
@@ -154,12 +153,13 @@ Diccionario de Datos versión 1.1 aprobado.
 * Diseño de la API, versión 1.1
 * Sprint 1 - Implementación de CU-002, versión 1.1
 * ADR-011 - Estructura Física de Frontend y Backend
+* ADR-012 - Esquema Físico Mínimo para CU-002
 
 ---
 
 # Última Decisión Importante
 
-ADR-011 aprueba tres proyectos productivos de Backend, una estructura de Frontend orientada a Iniciativas y el retiro de la raíz `/src`.
+ADR-012 aprueba el esquema físico mínimo para persistir Negocio, Iniciativa y Participante en CU-002.
 
 ---
 
