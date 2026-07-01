@@ -6,6 +6,26 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-30
 
+### EST-005 - CI/CD
+
+**Documento aprobado:** EST-005 - CI/CD
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se definió el flujo de integración y entrega continua del monorepo.
+* Se adoptó GitHub Actions como plataforma de automatización, sujeta a disponibilidad corporativa durante la implementación.
+* Se establecieron validaciones para Engineering Playbook, Frontend, Backend, contratos, persistencia y seguridad.
+* Se exigieron construcciones reproducibles y artefactos inmutables relacionados con un commit.
+* Se definió la promoción controlada de la misma Versión entre Desarrollo, QAS y PRD.
+* Se exigieron aprobación explícita, verificación posterior y estrategia de reversión antes de PRD.
+* Se gobernaron permisos, secretos, migraciones, evidencia y reintentos.
+* Se completó la Fase 3 - Standards.
+* Se definió ADR-008 - Plataforma y Estrategia de Despliegue como el siguiente documento del Engineering Playbook.
+
+---
+
 ### EST-004 - Convención de Nombres
 
 **Documento aprobado:** EST-004 - Convención de Nombres

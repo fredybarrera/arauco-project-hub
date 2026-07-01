@@ -4,9 +4,9 @@
 
 **Proyecto:** Arauco Project Hub
 
-**Fase actual:** Fase 3 - Standards (En progreso)
+**Fase actual:** Fase 3 - Standards (Completada)
 
-**Estado general:** Fase 2 - Architecture cerrada. Filosofía del Producto, SRS-001 a SRS-010, arquitecturas principales, decisiones tecnológicas y EST-001 a EST-004 aprobados. Standards en progreso.
+**Estado general:** Fase 2 - Architecture y Fase 3 - Standards completadas. Filosofía del Producto, SRS-001 a SRS-010, arquitecturas principales, decisiones tecnológicas y EST-001 a EST-005 aprobados. Preparación de la primera implementación trazable.
 
 ---
 
@@ -73,26 +73,27 @@
 * ✅ EST-002 - Estándar Azure
 * ✅ EST-003 - Convención de Repositorios
 * ✅ EST-004 - Convención de Nombres
+* ✅ EST-005 - CI/CD
 
 ---
 
 # Documento Actual
 
-EST-004 - Convención de Nombres (Approved)
+EST-005 - CI/CD (Approved)
 
 Objetivo:
 
-Definir nombres consistentes para documentación, código, API, persistencia y recursos técnicos sin crear sinónimos del Lenguaje Ubicuo.
+Definir las validaciones y el flujo de integración y entrega del monorepo sin seleccionar una plataforma de despliegue no aprobada.
 
 ---
 
 # Siguiente Objetivo
 
-EST-005 - CI/CD
+ADR-008 - Plataforma y Estrategia de Despliegue
 
 Objetivo:
 
-Definir las validaciones y el flujo de integración y entrega del monorepo sin seleccionar una plataforma de despliegue no aprobada.
+Seleccionar la plataforma de ejecución para Frontend y Backend, la forma de empaquetado, la topología, la configuración, la identidad, la estrategia de Despliegue y el mecanismo de migraciones.
 
 ---
 
@@ -129,12 +130,13 @@ Diccionario de Datos aprobado.
 * EST-003 - Convención de Repositorios
 * EST-004 - Convención de Nombres
 * EST-005 - CI/CD
+* ADR-008 - Plataforma y Estrategia de Despliegue
 
 ---
 
 # Última Decisión Importante
 
-EST-004 establece nombres consistentes para documentación, código, API, persistencia y recursos técnicos, preservando el Lenguaje Ubicuo.
+EST-005 adopta GitHub Actions para CI/CD, exige artefactos inmutables y promoción controlada entre Ambientes, y requiere un ADR antes de implementar el Despliegue.
 
 ---
 
