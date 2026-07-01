@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-30
 
+### Sprint 0 - Primera Capacidad Trazable
+
+**Documento aprobado:** Sprint 0 - Primera Capacidad Trazable
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se seleccionó CU-002 - Consultar una Iniciativa como primera capacidad trazable.
+* Se limitó la consulta a un Participante autenticado que participa en la Iniciativa.
+* Se incorporó trazabilidad hacia RF-002, RF-003, MP-001, MP-004 y FN-002.
+* Se definió un recorrido vertical que incluye Frontend, API, Backend, persistencia y autenticación.
+* Se mantuvieron fuera del alcance el registro, la actualización y los cambios de Estado de Iniciativa.
+* Se exigió no exponer información cuando el actor no participa en la Iniciativa.
+* Se establecieron criterios de aceptación para seguridad, límites arquitectónicos, pruebas y observabilidad.
+* Se definió Sprint 1 - Implementación de CU-002 como siguiente documento.
+
+---
+
 ### ADR-009 - Autenticación y Sesión para Frontend Estático
 
 **Documento aprobado:** ADR-009 - Autenticación y Sesión para Frontend Estático

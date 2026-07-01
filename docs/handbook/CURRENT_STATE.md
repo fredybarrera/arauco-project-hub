@@ -79,23 +79,29 @@
 
 ---
 
+## Roadmap
+
+* ✅ Sprint 0 - Primera Capacidad Trazable
+
+---
+
 # Documento Actual
 
-ADR-009 - Autenticación y Sesión para Frontend Estático (Approved)
+Sprint 0 - Primera Capacidad Trazable (Approved)
 
 Objetivo alcanzado:
 
-Se aprobó Authorization Code con PKCE y la validación directa de tokens en el Backend para una autenticación compatible con Azure Static Web Apps y Azure Container Apps. ADR-009 supersede la estrategia de sesión mediada por servidor Nuxt definida en ADR-005.
+Se aprobó la entrega vertical mínima de CU-002 - Consultar una Iniciativa para un Participante autenticado.
 
 ---
 
 # Siguiente Objetivo
 
-Preparar la primera capacidad trazable de implementación.
+Preparar Sprint 1 - Implementación de CU-002.
 
 Objetivo:
 
-Seleccionar una capacidad aprobada, acotar su entrega vertical y mantener trazabilidad hacia SRS, arquitectura, ADR y Standards.
+Descomponer la primera capacidad trazable en cambios pequeños y verificables para Frontend, API, Backend, dominio, persistencia, autenticación, observabilidad y pruebas.
 
 ---
 
@@ -134,12 +140,13 @@ Diccionario de Datos aprobado.
 * EST-005 - CI/CD
 * ADR-008 - Plataforma y Estrategia de Despliegue
 * ADR-009 - Autenticación y Sesión para Frontend Estático
+* Sprint 0 - Primera Capacidad Trazable
 
 ---
 
 # Última Decisión Importante
 
-ADR-009 adopta Authorization Code con PKCE para el Frontend estático, validación de tokens en el Backend y una identidad corporativa estable, supersediendo la estrategia de sesión mediada por servidor Nuxt de ADR-005.
+Sprint 0 selecciona CU-002 - Consultar una Iniciativa como primera capacidad trazable de implementación.
 
 ---
 
