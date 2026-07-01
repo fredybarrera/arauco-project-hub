@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Arauco.ProjectHub.Api\Arauco.ProjectHub.Api.csproj" />
+    <ProjectReference Include="..\..\src\Arauco.ProjectHub.Infrastructure\Arauco.ProjectHub.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

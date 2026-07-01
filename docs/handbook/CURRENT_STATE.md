@@ -91,21 +91,21 @@
 
 # Documento Actual
 
-ADR-012 - Esquema Físico Mínimo para CU-002 (Approved)
+Persistencia Mínima de CU-002 (Approved)
 
 Objetivo:
 
-Esquema físico mínimo aprobado para implementar la persistencia de CU-002.
+Contexto de Entity Framework Core, migración inicial y pruebas del esquema físico aprobados.
 
 ---
 
 # Siguiente Objetivo
 
-Implementar la persistencia mínima de CU-002.
+Implementar el Backend de CU-002.
 
 Objetivo:
 
-Crear el contexto de Entity Framework Core, la migración inicial y las pruebas de persistencia.
+Definir la consulta en la coordinación de capacidades, proyectar únicamente la información aprobada y verificar la participación dentro de la Iniciativa.
 
 ---
 
@@ -154,12 +154,13 @@ Diccionario de Datos versión 1.1 aprobado.
 * Sprint 1 - Implementación de CU-002, versión 1.1
 * ADR-011 - Estructura Física de Frontend y Backend
 * ADR-012 - Esquema Físico Mínimo para CU-002
+* Persistencia Mínima de CU-002
 
 ---
 
 # Última Decisión Importante
 
-ADR-012 aprueba el esquema físico mínimo para persistir Negocio, Iniciativa y Participante en CU-002.
+La Persistencia Mínima de CU-002 materializa ADR-012 mediante Entity Framework Core 10, una migración inicial sin datos semilla y pruebas del esquema físico.
 
 ---
 

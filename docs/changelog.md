@@ -6,6 +6,24 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-07-01
 
+### Persistencia Mínima de CU-002
+
+**Cambio aprobado:** Persistencia Mínima de CU-002
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se incorporó Entity Framework Core 10 con el proveedor oficial para Azure SQL Database.
+* Se implementó el contexto de persistencia para Negocio, Iniciativa y Participante.
+* Se configuraron explícitamente tablas, columnas, tipos, longitudes, relaciones, restricciones e índices definidos por ADR-012.
+* Se agregó la migración inicial sin datos semilla ni ejecución automática al iniciar la API.
+* Se verificaron `rowversion`, eliminación restrictiva e identidad corporativa conjunta y única.
+* Se agregaron pruebas automatizadas del modelo físico y la migración.
+* Se definió el Backend de CU-002 como siguiente paso.
+
+---
+
 ### ADR-012 - Esquema Físico Mínimo para CU-002
 
 **Documento aprobado:** ADR-012 - Esquema Físico Mínimo para CU-002
