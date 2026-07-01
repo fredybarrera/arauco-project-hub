@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-30
 
+### EST-003 - Convención de Repositorios
+
+**Documento aprobado:** EST-003 - Convención de Repositorios
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se definió el alcance del monorepo como repositorio exclusivo de Arauco Project Hub.
+* Se estableció la organización de primer nivel para documentación, Frontend, Backend, automatización y pruebas transversales.
+* Se protegieron los límites y la dirección de dependencias entre Frontend y Backend.
+* Se gobernó la incorporación de código compartido y nuevas carpetas de primer nivel.
+* Se definieron los archivos que deben y no deben versionarse.
+* Se adoptó Conventional Commits para los mensajes de commit.
+* Se establecieron convenciones mínimas para ramas, revisiones y validaciones por componente.
+* Se definió EST-004 - Convención de Nombres como el siguiente documento del Engineering Playbook.
+
+---
+
 ### EST-002 - Estándar Azure
 
 **Documento aprobado:** EST-002 - Estándar Azure
