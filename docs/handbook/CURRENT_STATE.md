@@ -43,6 +43,7 @@
 * ✅ ADR-006 - Tecnología y Estrategia de Persistencia
 * ✅ ADR-007 - Plataforma y Estándar de Observabilidad
 * ✅ ADR-008 - Plataforma y Estrategia de Despliegue
+* ✅ ADR-009 - Autenticación y Sesión para Frontend Estático
 
 ---
 
@@ -80,21 +81,21 @@
 
 # Documento Actual
 
-ADR-008 - Plataforma y Estrategia de Despliegue (Approved)
+ADR-009 - Autenticación y Sesión para Frontend Estático (Approved)
 
-Objetivo:
+Objetivo alcanzado:
 
-Seleccionar la plataforma de ejecución para Frontend y Backend, la forma de empaquetado, la topología, la configuración, la identidad, la estrategia de Despliegue y el mecanismo de migraciones.
+Se aprobó Authorization Code con PKCE y la validación directa de tokens en el Backend para una autenticación compatible con Azure Static Web Apps y Azure Container Apps. ADR-009 supersede la estrategia de sesión mediada por servidor Nuxt definida en ADR-005.
 
 ---
 
 # Siguiente Objetivo
 
-ADR-009 - Autenticación y Sesión para Frontend Estático
+Preparar la primera capacidad trazable de implementación.
 
 Objetivo:
 
-Revisar y superseder la estrategia de sesión mediada por servidor Nuxt definida en ADR-005, utilizando una alternativa compatible con Azure Static Web Apps y el Backend enlazado en Azure Container Apps.
+Seleccionar una capacidad aprobada, acotar su entrega vertical y mantener trazabilidad hacia SRS, arquitectura, ADR y Standards.
 
 ---
 
@@ -138,7 +139,7 @@ Diccionario de Datos aprobado.
 
 # Última Decisión Importante
 
-ADR-008 adopta Azure Static Web Apps para el Frontend, Azure Container Apps para el Backend y Azure Container Registry para las imágenes, sin utilizar Azure App Service.
+ADR-009 adopta Authorization Code con PKCE para el Frontend estático, validación de tokens en el Backend y una identidad corporativa estable, supersediendo la estrategia de sesión mediada por servidor Nuxt de ADR-005.
 
 ---
 

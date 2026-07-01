@@ -6,6 +6,28 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-30
 
+### ADR-009 - Autenticación y Sesión para Frontend Estático
+
+**Documento aprobado:** ADR-009 - Autenticación y Sesión para Frontend Estático
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se confirmó Microsoft Entra ID como proveedor corporativo.
+* Se adoptó OAuth 2.0 Authorization Code con PKCE para el Frontend estático.
+* Se definió un registro de aplicación sin secreto para el Frontend y un recurso protegido para la API.
+* Se exigió validar firma, emisor, audiencia y vigencia de cada token en el Backend.
+* Se adoptó tenant y object identifier como identidad corporativa estable.
+* Se mantuvieron separados identidad, Participante, Rol de Participación y autorización.
+* Se prohibió utilizar grupos o roles externos como permisos del dominio.
+* Se definió el almacenamiento inicial de tokens únicamente en memoria.
+* Se mantuvo el enlace entre Azure Static Web Apps y Azure Container Apps como restricción adicional de ingreso.
+* Se supersedió la estrategia de sesión mediada por servidor Nuxt definida en ADR-005.
+* Se definió la preparación de la primera capacidad trazable de implementación como siguiente paso.
+
+---
+
 ### ADR-008 - Plataforma y Estrategia de Despliegue
 
 **Documento aprobado:** ADR-008 - Plataforma y Estrategia de Despliegue
