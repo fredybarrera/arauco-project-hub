@@ -6,6 +6,27 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-30
 
+### ADR-010 - Relación entre Identidad Corporativa y Participante
+
+**Documento aprobado:** ADR-010 - Relación entre Identidad Corporativa y Participante
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se mantuvieron separadas identidad autenticada, Participante, Rol de Participación y permisos.
+* Se adoptaron tenant y object identifier como datos técnicos opcionales y conjuntos de Participante.
+* Se exigió unicidad de la combinación dentro de una Iniciativa.
+* Se conservó el significado de la Identificación de la persona o equipo.
+* Se prohibió utilizar correo o nombre como claves de autorización.
+* Se descartó el aprovisionamiento automático de Participantes.
+* Se descartó inicialmente un registro global de identidades por complejidad innecesaria.
+* Se mantuvo fuera del alcance la autorización de personas por pertenencia a equipos.
+* Se exigieron revisiones controladas de SRS-010, DER y Diccionario de Datos.
+* Se definió la revisión 1.1 de SRS-010 como siguiente documento.
+
+---
+
 ### Sprint 1 - Implementación de CU-002
 
 **Documento aprobado:** Sprint 1 - Implementación de CU-002

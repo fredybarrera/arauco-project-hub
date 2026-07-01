@@ -44,6 +44,7 @@
 * ✅ ADR-007 - Plataforma y Estándar de Observabilidad
 * ✅ ADR-008 - Plataforma y Estrategia de Despliegue
 * ✅ ADR-009 - Autenticación y Sesión para Frontend Estático
+* ✅ ADR-010 - Relación entre Identidad Corporativa y Participante
 
 ---
 
@@ -88,21 +89,21 @@
 
 # Documento Actual
 
-Sprint 1 - Implementación de CU-002 (Approved)
+ADR-010 - Relación entre Identidad Corporativa y Participante (Approved)
 
 Objetivo alcanzado:
 
-Se aprobó la secuencia de cambios pequeños y verificables para implementar CU-002 conforme al alcance de Sprint 0.
+Se aprobó representar tenant y object identifier como datos técnicos opcionales y conjuntos de Participante, con unicidad dentro de una Iniciativa.
 
 ---
 
 # Siguiente Objetivo
 
-Preparar ADR-010 - Relación entre Identidad Corporativa y Participante.
+Preparar la revisión 1.1 de SRS-010 - Modelo Relacional.
 
 Objetivo:
 
-Definir cómo la identidad corporativa estable aprobada en ADR-009 se relaciona con Participante sin utilizar correo o nombre como clave de autorización.
+Incorporar los datos y restricciones aprobados en ADR-010 antes de actualizar DER y Diccionario de Datos.
 
 ---
 
@@ -143,12 +144,13 @@ Diccionario de Datos aprobado.
 * ADR-009 - Autenticación y Sesión para Frontend Estático
 * Sprint 0 - Primera Capacidad Trazable
 * Sprint 1 - Implementación de CU-002
+* ADR-010 - Relación entre Identidad Corporativa y Participante
 
 ---
 
 # Última Decisión Importante
 
-Sprint 1 aprueba la secuencia de implementación de CU-002 y exige resolver mediante ADR la relación entre identidad corporativa y Participante antes de iniciar el desarrollo.
+ADR-010 relaciona la identidad corporativa con Participante mediante tenant y object identifier, sin reutilizar correo, nombre ni Identificación de la persona o equipo.
 
 ---
 
