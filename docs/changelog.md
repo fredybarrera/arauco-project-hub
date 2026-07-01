@@ -4,6 +4,28 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ---
 
+## 2026-07-01
+
+### ADR-011 - Estructura Física de Frontend y Backend
+
+**Documento aprobado:** ADR-011 - Estructura Física de Frontend y Backend
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se aprobaron tres proyectos productivos para el Backend.
+* Se mantuvieron coordinación y dominio dentro del módulo Iniciativas.
+* Se definieron proyectos de pruebas para Iniciativas y API.
+* Se estableció la dirección permitida de dependencias entre proyectos.
+* Se organizó el Frontend alrededor de la capacidad Iniciativas.
+* Se evitó crear carpetas globales de estado, utilidades o código compartido.
+* Se aprobó retirar la raíz `/src`.
+* Se mantuvieron `/frontend` y `/backend` como únicas raíces de código.
+* Se definió la creación de la base del monorepo como siguiente paso.
+
+---
+
 ## 2026-06-30
 
 ### Sprint 1 - Implementación de CU-002, versión 1.1

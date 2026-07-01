@@ -45,6 +45,7 @@
 * ✅ ADR-008 - Plataforma y Estrategia de Despliegue
 * ✅ ADR-009 - Autenticación y Sesión para Frontend Estático
 * ✅ ADR-010 - Relación entre Identidad Corporativa y Participante
+* ✅ ADR-011 - Estructura Física de Frontend y Backend
 
 ---
 
@@ -89,21 +90,21 @@
 
 # Documento Actual
 
-Sprint 1 - Implementación de CU-002 (versión 1.1 Approved)
+ADR-011 - Estructura Física de Frontend y Backend (Approved)
 
 Objetivo alcanzado:
 
-Se aprobaron la estrategia de datos controlados y las condiciones documentales para implementar CU-002.
+Se aprobaron las unidades de compilación, carpetas y dependencias mínimas de Frontend y Backend.
 
 ---
 
 # Siguiente Objetivo
 
-Iniciar la base del monorepo.
+Crear la base del monorepo.
 
 Objetivo:
 
-Preparar las estructuras mínimas de Frontend y Backend con construcción, análisis y pruebas verificables.
+Materializar ADR-011, retirar la raíz `/src` y verificar construcción y pruebas independientes.
 
 ---
 
@@ -150,12 +151,13 @@ Diccionario de Datos versión 1.1 aprobado.
 * Diccionario de Datos, versión 1.1
 * Diseño de la API, versión 1.1
 * Sprint 1 - Implementación de CU-002, versión 1.1
+* ADR-011 - Estructura Física de Frontend y Backend
 
 ---
 
 # Última Decisión Importante
 
-Sprint 1 versión 1.1 aprueba datos deterministas y aislados para Desarrollo y pruebas, sin datos de prueba ni aprovisionamiento automático en PRD.
+ADR-011 aprueba tres proyectos productivos de Backend, una estructura de Frontend orientada a Iniciativas y el retiro de la raíz `/src`.
 
 ---
 
