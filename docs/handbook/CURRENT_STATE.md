@@ -96,15 +96,17 @@ Objetivo alcanzado:
 
 Se aprobaron las unidades de compilación, carpetas y dependencias mínimas de Frontend y Backend.
 
+La base del monorepo fue materializada y validada conforme a ADR-011.
+
 ---
 
 # Siguiente Objetivo
 
-Crear la base del monorepo.
+Implementar la persistencia mínima de CU-002.
 
 Objetivo:
 
-Materializar ADR-011, retirar la raíz `/src` y verificar construcción y pruebas independientes.
+Representar Negocio, Iniciativa y Participante conforme al modelo aprobado, incorporando la migración inicial y pruebas de integración con datos aislados.
 
 ---
 

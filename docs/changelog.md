@@ -6,6 +6,28 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-07-01
 
+### Base del Monorepo
+
+**Cambio aprobado:** Base del Monorepo
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se materializó la estructura física aprobada en ADR-011.
+* Se crearon tres proyectos productivos y dos proyectos de pruebas para el Backend.
+* Se configuraron las dependencias permitidas entre API, Iniciativas e Infrastructure.
+* Se agregó una verificación automatizada para proteger a Iniciativas de dependencias de infraestructura.
+* Se creó el Frontend con Nuxt 4, Vue 3 y TypeScript.
+* Se configuró la generación estática para Azure Static Web Apps.
+* Se incorporaron typecheck, pruebas y construcción independientes.
+* Se agregó el health check inicial del Backend.
+* Se retiró la raíz `/src` y se agregó `.gitignore`.
+* Se actualizaron las instrucciones de validación en `README.md`.
+* Se definió la persistencia mínima de CU-002 como siguiente paso.
+
+---
+
 ### ADR-011 - Estructura Física de Frontend y Backend
 
 **Documento aprobado:** ADR-011 - Estructura Física de Frontend y Backend

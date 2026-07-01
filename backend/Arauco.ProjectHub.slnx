@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Arauco.ProjectHub.Api/Arauco.ProjectHub.Api.csproj" />
+    <Project Path="src/Arauco.ProjectHub.Infrastructure/Arauco.ProjectHub.Infrastructure.csproj" />
+    <Project Path="src/Arauco.ProjectHub.Iniciativas/Arauco.ProjectHub.Iniciativas.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Arauco.ProjectHub.Api.Tests/Arauco.ProjectHub.Api.Tests.csproj" />
+    <Project Path="tests/Arauco.ProjectHub.Iniciativas.Tests/Arauco.ProjectHub.Iniciativas.Tests.csproj" />
+  </Folder>
+</Solution>
