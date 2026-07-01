@@ -23,7 +23,7 @@
 * ✅ SRS-007 - Modelo de Permisos
 * ✅ SRS-008 - Flujos de Negocio
 * ✅ SRS-009 - Casos de Uso
-* ✅ SRS-010 - Modelo Relacional
+* ✅ SRS-010 - Modelo Relacional (versión 1.1)
 
 ---
 
@@ -89,21 +89,21 @@
 
 # Documento Actual
 
-ADR-010 - Relación entre Identidad Corporativa y Participante (Approved)
+SRS-010 - Modelo Relacional (versión 1.1 Approved)
 
 Objetivo alcanzado:
 
-Se aprobó representar tenant y object identifier como datos técnicos opcionales y conjuntos de Participante, con unicidad dentro de una Iniciativa.
+Se incorporaron Identificador del tenant y object identifier como datos técnicos opcionales y conjuntos de Participante, con unicidad dentro de una Iniciativa.
 
 ---
 
 # Siguiente Objetivo
 
-Preparar la revisión 1.1 de SRS-010 - Modelo Relacional.
+Preparar la revisión 1.1 del DER.
 
 Objetivo:
 
-Incorporar los datos y restricciones aprobados en ADR-010 antes de actualizar DER y Diccionario de Datos.
+Representar los datos y restricciones de identidad corporativa aprobados en SRS-010 versión 1.1.
 
 ---
 
@@ -121,7 +121,7 @@ Modelo de Dominio aprobado.
 
 Modelo Operacional aprobado.
 
-Modelo Relacional aprobado.
+Modelo Relacional versión 1.1 aprobado.
 
 DER aprobado.
 
@@ -145,12 +145,13 @@ Diccionario de Datos aprobado.
 * Sprint 0 - Primera Capacidad Trazable
 * Sprint 1 - Implementación de CU-002
 * ADR-010 - Relación entre Identidad Corporativa y Participante
+* SRS-010 - Modelo Relacional, versión 1.1
 
 ---
 
 # Última Decisión Importante
 
-ADR-010 relaciona la identidad corporativa con Participante mediante tenant y object identifier, sin reutilizar correo, nombre ni Identificación de la persona o equipo.
+SRS-010 versión 1.1 incorpora la identidad corporativa como datos técnicos opcionales de Participante y conserva separada la Identificación de la persona o equipo.
 
 ---
 

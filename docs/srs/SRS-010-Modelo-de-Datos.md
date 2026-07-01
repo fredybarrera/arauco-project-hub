@@ -4,11 +4,13 @@
 
 # SRS-010 - Modelo Relacional
 
-**Versión:** 1.0
+**Versión:** 1.1
 
 **Estado:** Approved
 
-**Fecha:** 2026-06-28
+**Fecha:** 2026-06-30
+
+**Revisión anterior:** 1.0 Approved
 
 ---
 
@@ -135,6 +137,11 @@ Datos mínimos:
 * Nombre.
 * Rol de Participación.
 
+Datos técnicos opcionales de identidad:
+
+* Identificador del tenant.
+* Object identifier.
+
 Relaciones:
 
 * Pertenece a una Iniciativa.
@@ -144,8 +151,12 @@ Restricciones:
 * Toda participación corresponde a una Iniciativa.
 * El Rol de Participación utiliza únicamente los valores aprobados.
 * Una misma persona o equipo puede participar en distintas Iniciativas con roles diferentes.
+* Identificador del tenant y object identifier están presentes juntos o ausentes juntos.
+* La combinación de Iniciativa, Identificador del tenant y object identifier no se repite.
+* La Identificación de la persona o equipo mantiene un significado distinto de la identidad corporativa.
+* Un Participante que representa un equipo puede no tener identidad corporativa asociada.
 
-La integración con una fuente corporativa de personas queda fuera del alcance de esta versión.
+La administración productiva de la vinculación con una identidad corporativa queda fuera del alcance de esta versión.
 
 ---
 
@@ -493,6 +504,14 @@ Una Iniciativa debe tener al menos un Responsable Funcional y un responsable TI 
 
 La identificación exacta del responsable TI queda Pendiente porque los documentos aprobados no definen un único Rol de Participación para esa responsabilidad.
 
+## MR-011
+
+Identificador del tenant y object identifier de Participante deben estar presentes juntos o ausentes juntos.
+
+## MR-012
+
+La combinación de Iniciativa, Identificador del tenant y object identifier no puede identificar más de un Participante.
+
 ---
 
 # 9. Trazabilidad
@@ -501,7 +520,7 @@ La identificación exacta del responsable TI queda Pendiente porque los document
 | --- | --- |
 | Negocio | SRS-002, SRS-003 |
 | Iniciativa | SRS-002, SRS-003, SRS-004 |
-| Participante | SRS-003 |
+| Participante | SRS-003, ADR-010 |
 | Componente | SRS-002, SRS-003 |
 | Recurso | SRS-003, SRS-004 |
 | Documento | SRS-003, SRS-004 |
@@ -512,7 +531,7 @@ La identificación exacta del responsable TI queda Pendiente porque los document
 | Despliegue | SRS-003, SRS-004 |
 | Historial | SRS-003, SRS-004 |
 
-Este documento aplica además PHIL-001 y ADR-001.
+Este documento aplica además PHIL-001, ADR-001 y ADR-010.
 
 ---
 
@@ -546,6 +565,10 @@ Ambiente se mantiene como un conjunto común de valores aprobados y no se duplic
 
 La definición del motor, los tipos físicos y la estrategia de acceso a datos se posterga hasta contar con una decisión arquitectónica específica.
 
+## D-008
+
+La identidad corporativa se representa en Participante mediante Identificador del tenant y object identifier opcionales y conjuntos, sin reemplazar la Identificación de la persona o equipo.
+
 ---
 
 # 11. Pendientes
@@ -559,8 +582,9 @@ La definición del motor, los tipos físicos y la estrategia de acceso a datos s
 * Validar la relación entre Solicitudes y Versiones.
 * Resolver el Pendiente de SRS-003 respecto del concepto Solución.
 * Definir las condiciones y restricciones de retención de información.
-* Elaborar el DER y el Diccionario de Datos después de aprobar este documento.
+* Actualizar el DER y el Diccionario de Datos después de aprobar esta revisión.
 * Documentar mediante ADR la selección de la tecnología y la estrategia de persistencia cuando corresponda.
+* Definir una capacidad autorizada para administrar vinculaciones de identidad corporativa en PRD.
 
 ---
 
@@ -568,4 +592,4 @@ La definición del motor, los tipos físicos y la estrategia de acceso a datos s
 
 **Estado actual:** Approved
 
-Este documento constituye la fuente oficial del Modelo Relacional de Arauco Project Hub.
+Esta revisión constituye la fuente oficial del Modelo Relacional de Arauco Project Hub y reemplaza la versión 1.0.

@@ -6,6 +6,26 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-30
 
+### SRS-010 - Modelo Relacional, versión 1.1
+
+**Documento aprobado:** SRS-010 - Modelo Relacional
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se incorporaron Identificador del tenant y object identifier como datos técnicos opcionales de Participante.
+* Se exigió que ambos datos estén presentes juntos o ausentes juntos.
+* Se definió su unicidad dentro del contexto de una Iniciativa.
+* Se mantuvo separada la Identificación de la persona o equipo.
+* Se permitió que un Participante que representa un equipo no tenga identidad corporativa asociada.
+* Se incorporaron MR-011 y MR-012 como reglas de integridad.
+* Se agregó trazabilidad hacia ADR-010.
+* La versión 1.1 reemplazó la versión 1.0 como fuente oficial.
+* Se definió la revisión 1.1 del DER como siguiente documento.
+
+---
+
 ### ADR-010 - Relación entre Identidad Corporativa y Participante
 
 **Documento aprobado:** ADR-010 - Relación entre Identidad Corporativa y Participante
