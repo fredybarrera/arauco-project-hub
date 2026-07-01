@@ -82,26 +82,27 @@
 ## Roadmap
 
 * ✅ Sprint 0 - Primera Capacidad Trazable
+* ✅ Sprint 1 - Implementación de CU-002
 
 ---
 
 # Documento Actual
 
-Sprint 0 - Primera Capacidad Trazable (Approved)
+Sprint 1 - Implementación de CU-002 (Approved)
 
 Objetivo alcanzado:
 
-Se aprobó la entrega vertical mínima de CU-002 - Consultar una Iniciativa para un Participante autenticado.
+Se aprobó la secuencia de cambios pequeños y verificables para implementar CU-002 conforme al alcance de Sprint 0.
 
 ---
 
 # Siguiente Objetivo
 
-Preparar Sprint 1 - Implementación de CU-002.
+Preparar ADR-010 - Relación entre Identidad Corporativa y Participante.
 
 Objetivo:
 
-Descomponer la primera capacidad trazable en cambios pequeños y verificables para Frontend, API, Backend, dominio, persistencia, autenticación, observabilidad y pruebas.
+Definir cómo la identidad corporativa estable aprobada en ADR-009 se relaciona con Participante sin utilizar correo o nombre como clave de autorización.
 
 ---
 
@@ -141,12 +142,13 @@ Diccionario de Datos aprobado.
 * ADR-008 - Plataforma y Estrategia de Despliegue
 * ADR-009 - Autenticación y Sesión para Frontend Estático
 * Sprint 0 - Primera Capacidad Trazable
+* Sprint 1 - Implementación de CU-002
 
 ---
 
 # Última Decisión Importante
 
-Sprint 0 selecciona CU-002 - Consultar una Iniciativa como primera capacidad trazable de implementación.
+Sprint 1 aprueba la secuencia de implementación de CU-002 y exige resolver mediante ADR la relación entre identidad corporativa y Participante antes de iniciar el desarrollo.
 
 ---
 

@@ -6,6 +6,25 @@ Este documento registra los hitos formales alcanzados por el Engineering Playboo
 
 ## 2026-06-30
 
+### Sprint 1 - Implementación de CU-002
+
+**Documento aprobado:** Sprint 1 - Implementación de CU-002
+
+**Estado alcanzado:** Approved
+
+#### Resumen de los cambios
+
+* Se definió el resultado esperado para implementar CU-002.
+* Se ordenó la entrega en base del monorepo, persistencia, Backend, API, autenticación, Frontend y recorrido integrado.
+* Se exigió evidencia verificable para cada parte de la secuencia.
+* Se mantuvo la consulta limitada a Negocio, nombre y Estado de Iniciativa.
+* Se conservaron fuera del alcance el registro, actualización y cambio de Estado de Iniciativa.
+* Se prohibió asumir que la identificación existente del Participante equivale a la identidad corporativa.
+* Se exigió resolver mediante ADR la relación entre identidad corporativa y Participante.
+* Se definió ADR-010 - Relación entre Identidad Corporativa y Participante como siguiente documento.
+
+---
+
 ### Sprint 0 - Primera Capacidad Trazable
 
 **Documento aprobado:** Sprint 0 - Primera Capacidad Trazable
